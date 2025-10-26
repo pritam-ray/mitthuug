@@ -1,0 +1,198 @@
+{
+  "checkout_cart_microcopy": {
+    "cart": {
+      "empty_cart": "Your cart is empty. Start snacking!",
+      "continue_shopping": "Continue Shopping",
+      "proceed_to_checkout": "Proceed to Checkout",
+      "cart_updated": "Cart updated",
+      "item_added": "Added to cart!",
+      "item_removed": "Item removed",
+      "free_shipping_threshold": "Add ₹{amount} more for free shipping!",
+      "free_shipping_unlocked": "🎉 Free shipping unlocked!",
+      "cart_total": "Cart Total",
+      "subtotal": "Subtotal",
+      "shipping": "Shipping",
+      "tax": "Tax (included)",
+      "total": "Total"
+    },
+    "shipping_messages": {
+      "free_shipping": "Free shipping on orders above ₹500",
+      "standard_delivery": "Delivered in 3-5 business days",
+      "express_available": "Express delivery available at checkout",
+      "ships_today": "Order within 2 hours — ships today!",
+      "fresh_batch": "Fresh batch crafted just for you",
+      "eco_packaging": "Packed in sustainable materials",
+      "tracking_included": "Track your order in real-time"
+    },
+    "coupon": {
+      "placeholder": "Enter coupon code",
+      "apply": "Apply",
+      "applied": "Coupon applied!",
+      "invalid": "Invalid coupon code",
+      "expired": "This coupon has expired",
+      "minimum_not_met": "Add ₹{amount} more to use this coupon",
+      "first_order": "FIRST10 — 10% off your first order",
+      "festival_offer": "Save 15% with code FESTIVE15"
+    },
+    "errors": {
+      "stock_unavailable": "Sorry, this item is out of stock",
+      "insufficient_stock": "Only {quantity} left in stock",
+      "payment_failed": "Payment failed. Please try again.",
+      "address_incomplete": "Please complete your delivery address",
+      "network_error": "Connection lost. Check your internet.",
+      "generic_error": "Something went wrong. Please retry.",
+      "min_order_value": "Minimum order value is ₹199"
+    },
+    "success": {
+      "order_placed": "Order placed successfully! 🎉",
+      "payment_received": "Payment confirmed. Preparing your order...",
+      "profile_updated": "Profile saved successfully",
+      "email_verified": "Email verified! Welcome to MitthuuG.",
+      "review_submitted": "Thank you for your review!",
+      "subscribed": "You're subscribed! First box ships soon."
+    },
+    "stock_status": {
+      "in_stock": "In Stock",
+      "low_stock": "Only {count} left — order soon!",
+      "out_of_stock": "Out of Stock",
+      "coming_soon": "Coming Soon",
+      "pre_order": "Available for Pre-Order",
+      "notify_me": "Notify me when available"
+    },
+    "gift_options": {
+      "add_gift_wrap": "Add gift wrapping (+₹50)",
+      "gift_message_placeholder": "Write a heartfelt message (max 150 characters)",
+      "gift_checkbox": "This is a gift — include greeting card",
+      "gift_note_label": "Gift message (optional)",
+      "send_to_different": "Send to a different address",
+      "hide_price": "Hide price on packing slip"
+    }
+  },
+  "onsite_micro_ux": {
+    "success_toasts": {
+      "added_to_cart": "Added to cart! 🛒",
+      "removed_from_cart": "Removed from cart",
+      "wishlist_added": "Saved to wishlist ❤️",
+      "subscribed_newsletter": "You're in! Check your email.",
+      "order_confirmed": "Order confirmed! Check your inbox.",
+      "copied_to_clipboard": "Copied!"
+    },
+    "tooltips": {
+      "why_jaggery": {
+        "trigger": "Why jaggery? ℹ️",
+        "text": "Jaggery is unrefined cane sugar rich in iron & minerals. It has a lower glycemic index than white sugar and aids digestion naturally."
+      },
+      "fresh_guarantee": {
+        "trigger": "Freshness guarantee ℹ️",
+        "text": "We craft in small batches daily. Your pack is made within 48 hours of dispatch."
+      },
+      "storage_tip": {
+        "trigger": "How to store? ℹ️",
+        "text": "Keep in an airtight container away from moisture. No refrigeration needed. Best within 45 days."
+      },
+      "allergy_info": {
+        "trigger": "Allergens? ℹ️",
+        "text": "Contains sesame. Almond variant has tree nuts. May contain traces of other nuts."
+      },
+      "vegan_friendly": {
+        "trigger": "Vegan? ℹ️",
+        "text": "Yes! All our variants are 100% plant-based and vegan-friendly."
+      },
+      "gluten_free": {
+        "trigger": "Gluten-free? ℹ️",
+        "text": "Absolutely. Made with sesame and jaggery — naturally gluten-free."
+      },
+      "shelf_life": {
+        "trigger": "Shelf life? ℹ️",
+        "text": "6 months from manufacture when unopened. Best within 45 days after opening."
+      },
+      "subscription_save": {
+        "trigger": "Save with subscription ℹ️",
+        "text": "Subscribe and save 10-15%. Skip, pause or cancel anytime. Delivered monthly."
+      }
+    },
+    "image_alt_text": [
+      {
+        "image": "homepage-hero.jpg",
+        "alt": "MitthuuG handcrafted til-gud bites with sesame and jaggery - premium healthy Indian snacks"
+      },
+      {
+        "image": "classic-product-close.jpg",
+        "alt": "Classic Til-Gud Bites close-up showing crunchy roasted sesame with pure jaggery texture"
+      },
+      {
+        "image": "ingredients-spread.jpg",
+        "alt": "Natural ingredients - organic jaggery blocks and roasted white sesame seeds for MitthuuG bites"
+      },
+      {
+        "image": "gift-box-lifestyle.jpg",
+        "alt": "MitthuuG Premium Gift Box with ribbon - luxury til-gud bites perfect for Diwali festival gifting"
+      },
+      {
+        "image": "artisan-making.jpg",
+        "alt": "Small batch handcrafted process - artisan making fresh til-gud bites in MitthuuG kitchen"
+      },
+      {
+        "image": "chai-pairing.jpg",
+        "alt": "MitthuuG Cardamom Til-Gud Bites served with traditional Indian chai tea - perfect snack pairing"
+      },
+      {
+        "image": "trial-pack-open.jpg",
+        "alt": "MitthuuG Trial Pack sampler with three flavors - Classic, Cardamom and Almond til ravadhi bites"
+      },
+      {
+        "image": "sustainable-packaging.jpg",
+        "alt": "Eco-friendly sustainable packaging for MitthuuG til-gud bites - minimal waste design"
+      }
+    ],
+    "loading_states": {
+      "loading_products": "Loading delicious options...",
+      "processing_payment": "Processing payment securely...",
+      "placing_order": "Placing your order...",
+      "updating_cart": "Updating...",
+      "checking_stock": "Checking availability..."
+    },
+    "empty_states": {
+      "no_products": "No products found. Try different filters.",
+      "no_orders": "You haven't placed any orders yet.",
+      "no_reviews": "No reviews yet. Be the first!",
+      "no_search_results": "No results for \"{query}\". Try another search.",
+      "wishlist_empty": "Your wishlist is empty. Start saving favorites!"
+    },
+    "form_labels": {
+      "email_placeholder": "your.email@example.com",
+      "phone_placeholder": "10-digit mobile number",
+      "name_placeholder": "Full name",
+      "address_placeholder": "Complete delivery address",
+      "pincode_placeholder": "6-digit PIN code",
+      "city_placeholder": "City",
+      "state_placeholder": "State"
+    },
+    "buttons": {
+      "load_more": "Load More",
+      "view_all": "View All Products",
+      "learn_more": "Learn More",
+      "read_reviews": "Read Reviews",
+      "write_review": "Write a Review",
+      "track_order": "Track Order",
+      "reorder": "Reorder",
+      "contact_support": "Contact Us",
+      "subscribe": "Subscribe",
+      "share": "Share"
+    }
+  },
+  "badges_labels": {
+    "new_arrival": "New",
+    "bestseller": "Bestseller",
+    "limited_edition": "Limited Edition",
+    "almost_gone": "Almost Gone!",
+    "back_in_stock": "Back in Stock",
+    "festive_special": "Festive Special",
+    "gift_ready": "Gift-Ready",
+    "vegan": "Vegan",
+    "gluten_free": "Gluten-Free",
+    "no_preservatives": "No Preservatives",
+    "handcrafted": "Handcrafted",
+    "small_batch": "Small Batch"
+  }
+}

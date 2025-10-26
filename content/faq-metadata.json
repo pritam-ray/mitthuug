@@ -1,0 +1,154 @@
+{
+  "faq_page": {
+    "page_title": "Frequently Asked Questions | MitthuuG",
+    "page_description": "Got questions about MitthuuG til-gud bites? Find answers about ingredients, freshness, shipping, returns, allergens, and more.",
+    "faqs": [
+      {
+        "id": "faq_01",
+        "category": "Ingredients & Quality",
+        "question": "What are MitthuuG bites made of?",
+        "answer": "Our bites are crafted with just two primary ingredients: premium roasted sesame seeds and organic jaggery. The Cardamom variant includes green cardamom powder, and the Almond variant features California almonds. That's it — no refined sugar, no preservatives, no artificial flavors. Just pure, traditional goodness.",
+        "keywords": ["ingredients", "natural", "organic"]
+      },
+      {
+        "id": "faq_02",
+        "category": "Ingredients & Quality",
+        "question": "How fresh are the bites when they arrive?",
+        "answer": "Every order is fulfilled with a batch made within 48 hours of dispatch. We craft in small batches daily to ensure maximum freshness. Your bites arrive with at least 5 months of shelf life remaining (6 months total from manufacture). Once opened, consume within 45 days for best flavor and texture.",
+        "keywords": ["freshness", "shelf life", "quality"]
+      },
+      {
+        "id": "faq_03",
+        "category": "Ingredients & Quality",
+        "question": "Are your products vegan and gluten-free?",
+        "answer": "Yes! All MitthuuG variants are 100% plant-based and vegan-friendly. They're also naturally gluten-free since we only use sesame, jaggery, cardamom, and almonds — no wheat, barley, or rye. Perfect for vegan and gluten-sensitive diets.",
+        "keywords": ["vegan", "gluten-free", "dietary"]
+      },
+      {
+        "id": "faq_04",
+        "category": "Allergens & Dietary",
+        "question": "What allergens should I be aware of?",
+        "answer": "All our products contain sesame seeds. The Almond variant also contains tree nuts (almonds). Our facility handles nuts, so there may be traces of other tree nuts across all products. If you have severe nut or sesame allergies, please consult your doctor before consuming.",
+        "keywords": ["allergens", "sesame", "nuts", "safety"]
+      },
+      {
+        "id": "faq_05",
+        "category": "Allergens & Dietary",
+        "question": "Are MitthuuG bites suitable for diabetics?",
+        "answer": "While our bites use jaggery (which has a lower glycemic index than refined sugar), they still contain natural sugars. We recommend consulting your healthcare provider before including them in a diabetic diet. Many customers enjoy them in moderation as a healthier alternative to conventional sweets.",
+        "keywords": ["diabetes", "sugar", "health"]
+      },
+      {
+        "id": "faq_06",
+        "category": "Shipping & Delivery",
+        "question": "Where do you ship, and how long does delivery take?",
+        "answer": "We currently ship across India. Standard delivery takes 3-5 business days from dispatch. Express delivery (1-2 days) is available in select metro cities for an additional charge. We ship orders Monday through Friday. Orders placed before 2 PM ship the same day (subject to stock availability).",
+        "keywords": ["shipping", "delivery", "timeline"]
+      },
+      {
+        "id": "faq_07",
+        "category": "Shipping & Delivery",
+        "question": "Do you offer international shipping?",
+        "answer": "Not currently, but we're working on it! We're exploring partnerships to bring MitthuuG to Indian communities worldwide. If you're outside India and interested, email us at hello@mitthuug.com — we'll notify you as soon as international shipping launches.",
+        "keywords": ["international", "global", "overseas"]
+      },
+      {
+        "id": "faq_08",
+        "category": "Shipping & Delivery",
+        "question": "Is there a minimum order value for free shipping?",
+        "answer": "Yes! Orders above ₹500 qualify for free standard shipping across India. For orders below ₹500, shipping charges are ₹50-₹80 depending on your location. Express shipping has separate charges regardless of order value.",
+        "keywords": ["free shipping", "minimum order", "charges"]
+      },
+      {
+        "id": "faq_09",
+        "category": "Returns & Refunds",
+        "question": "What is your return and refund policy?",
+        "answer": "We want you to love your MitthuuG experience! If you receive a damaged or defective product, contact us within 48 hours of delivery with photos. We'll arrange a replacement or full refund immediately. Due to food safety regulations, we cannot accept returns of opened or consumed products unless there's a quality issue.",
+        "keywords": ["returns", "refunds", "policy", "damaged"]
+      },
+      {
+        "id": "faq_10",
+        "category": "Gifting & Customization",
+        "question": "Can I add a personalized message for gifting?",
+        "answer": "Absolutely! When you select 'This is a gift' at checkout, you can add a personalized message (up to 150 characters). We'll include it on a beautiful greeting card inside the package. Gift wrapping with ribbon is available for ₹50. For bulk corporate orders (25+ boxes), we offer custom branding — email us for details.",
+        "keywords": ["gift", "personalization", "corporate", "custom"]
+      },
+      {
+        "id": "faq_11",
+        "category": "Subscription",
+        "question": "Do you offer subscriptions?",
+        "answer": "Yes! Subscribe and save 10-15% on your favorite flavors. Choose monthly, bi-monthly, or quarterly delivery. You can skip, pause, or cancel anytime with no penalties — full flexibility. Subscribers also get early access to new flavors and seasonal specials. Set up your subscription at checkout.",
+        "keywords": ["subscription", "save", "recurring", "auto-delivery"]
+      },
+      {
+        "id": "faq_12",
+        "category": "Storage & Handling",
+        "question": "How should I store MitthuuG bites?",
+        "answer": "Store unopened packs in a cool, dry place away from direct sunlight — no refrigeration needed. Once opened, transfer to an airtight container to maintain crunch and freshness. Avoid moisture exposure. Best consumed within 45 days of opening, though they remain safe for up to 6 months from manufacture date if stored properly.",
+        "keywords": ["storage", "freshness", "shelf life", "handling"]
+      }
+    ]
+  },
+  "meta_data": {
+    "homepage": {
+      "meta_title": "MitthuuG — Handcrafted Til-Gud Bites | Premium Sesame Jaggery Snacks",
+      "meta_description": "Discover MitthuuG: Artisan til-gud bites made with roasted sesame & organic jaggery. No refined sugar, 100% natural. Shop Classic, Cardamom & Almond flavors online."
+    },
+    "shop_category": {
+      "meta_title": "Shop Premium Til-Gud Bites | Sesame Jaggery Snacks | MitthuuG",
+      "meta_description": "Browse MitthuuG's handcrafted til-gud bites. Classic, Cardamom & Almond flavors. Vegan, gluten-free, no preservatives. Free shipping over ₹500. Order now!"
+    },
+    "products": [
+      {
+        "product": "Classic Til-Gud Bites",
+        "meta_title": "Classic Til-Gud Bites | Pure Sesame & Jaggery | MitthuuG",
+        "meta_description": "Handcrafted Classic Til-Gud Bites with roasted sesame & organic jaggery. No refined sugar. Rich in iron & calcium. Order fresh, premium til ravadhi online."
+      },
+      {
+        "product": "Cardamom Til-Gud Bites",
+        "meta_title": "Cardamom Til-Gud Bites | Aromatic Sesame Snacks | MitthuuG",
+        "meta_description": "Premium Cardamom Til-Gud Bites with green cardamom, roasted sesame & jaggery. Natural, aromatic, aids digestion. Order artisan til ravadhi online."
+      },
+      {
+        "product": "Almond Til-Gud Bites",
+        "meta_title": "Almond Til-Gud Bites | Protein-Rich Sesame Snacks | MitthuuG",
+        "meta_description": "Almond Til-Gud Bites with California almonds, sesame & jaggery. High protein, vitamin E, heart-healthy. Premium til ravadhi online India."
+      },
+      {
+        "product": "Trial Pack",
+        "meta_title": "Trial Pack — 3 Flavors Til-Gud Bites Sampler | MitthuuG",
+        "meta_description": "Try all 3 MitthuuG flavors! Trial Pack includes Classic, Cardamom & Almond til-gud bites. Perfect gift or sampler. Order til ravadhi variety pack."
+      },
+      {
+        "product": "Premium Gift Box",
+        "meta_title": "Premium Gift Box 500g | Luxury Til-Gud Bites Gift | MitthuuG",
+        "meta_description": "MitthuuG Premium Gift Box — 500g handcrafted til-gud bites in luxury packaging. Perfect for Diwali, weddings, corporate gifts. Order now."
+      }
+    ],
+    "blog_posts": [
+      {
+        "post": "Why Sesame & Jaggery Make the Perfect Winter Snack",
+        "meta_title": "Why Sesame & Jaggery Are Perfect Winter Snacks | MitthuuG Blog",
+        "meta_description": "Discover why sesame and jaggery (til-gud) are the ultimate winter snacks. Learn health benefits, Ayurvedic wisdom, and how to enjoy them daily."
+      },
+      {
+        "post": "How To Gift Traditional Sweets the Modern Way",
+        "meta_title": "How to Gift Traditional Sweets the Modern Way | MitthuuG",
+        "meta_description": "Elevate your gifting game! Learn how to gift traditional Indian sweets like til-gud in modern, thoughtful ways for festivals, weddings & corporate events."
+      },
+      {
+        "post": "5 Ways to Enjoy MitthuuG Bites (Recipes & Pairings)",
+        "meta_title": "5 Creative Ways to Enjoy Til-Gud Bites | Recipes | MitthuuG",
+        "meta_description": "Beyond snacking! Discover 5 delicious ways to enjoy MitthuuG til-gud bites — from yogurt toppings to dessert crumbles. Easy recipes & pairing ideas."
+      }
+    ],
+    "about_page": {
+      "meta_title": "Our Story — Tradition Meets Modern Wellness | MitthuuG",
+      "meta_description": "Learn the MitthuuG story: How we're bringing traditional til-gud bites to modern India. Handcrafted, sustainable, and rooted in heritage. Discover our journey."
+    },
+    "our_promise_page": {
+      "meta_title": "Our Promise — Pure, Fresh, Sustainable | MitthuuG",
+      "meta_description": "The MitthuuG promise: 100% natural ingredients, small-batch crafting, sustainable packaging. Discover why thousands trust us for premium til-gud bites."
+    }
+  }
+}

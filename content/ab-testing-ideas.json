@@ -1,0 +1,184 @@
+{
+  "ab_testing_experiments": [
+    {
+      "experiment_id": "ab_test_01",
+      "name": "Hero Headline Variants",
+      "hypothesis": "A headline emphasizing health benefits ('Guilt-Free Indulgence') will convert better than a tradition-focused headline ('Ancient Taste, Modern Treat') because modern consumers prioritize wellness over nostalgia.",
+      "test_type": "A/B test",
+      "variants": [
+        {
+          "variant": "Control (A)",
+          "headline": "MitthuuG — Premium Til-Gud Bites: Ancient Taste, Modern Treat",
+          "reasoning": "Emphasizes tradition and premium positioning"
+        },
+        {
+          "variant": "Variant B",
+          "headline": "Guilt-Free Indulgence: 100% Natural Til-Gud Bites",
+          "reasoning": "Leads with health benefit and natural ingredients"
+        },
+        {
+          "variant": "Variant C (optional)",
+          "headline": "Handcrafted Sesame & Jaggery Bites — No Refined Sugar",
+          "reasoning": "Product-forward with key differentiator"
+        }
+      ],
+      "primary_metric": "Click-through rate (CTR) to shop page",
+      "secondary_metrics": [
+        "Time on page",
+        "Bounce rate",
+        "Add-to-cart rate"
+      ],
+      "minimum_sample_size": "1,500 visitors per variant (assumes 5% baseline CTR, 80% power, 95% confidence)",
+      "estimated_duration": "7-14 days",
+      "success_criteria": "Winning variant shows >15% improvement in CTR with statistical significance (p < 0.05)",
+      "implementation_notes": "Test on homepage hero only. Keep subheadline and CTA consistent across variants."
+    },
+    {
+      "experiment_id": "ab_test_02",
+      "name": "CTA Button: Color vs. Copy",
+      "hypothesis": "Changing CTA copy from generic 'Shop Now' to urgency-driven 'Try Our Sampler' will increase conversion, as it lowers commitment anxiety for first-time visitors.",
+      "test_type": "Multivariate test (2x2)",
+      "variants": [
+        {
+          "variant": "Control (A)",
+          "button_color": "Ochre (#C6862E)",
+          "button_text": "Shop Now",
+          "reasoning": "Current brand standard"
+        },
+        {
+          "variant": "Variant B",
+          "button_color": "Ochre (#C6862E)",
+          "button_text": "Try Our Sampler",
+          "reasoning": "Lower commitment, specific action"
+        },
+        {
+          "variant": "Variant C",
+          "button_color": "Metallic Gold (#B8860B)",
+          "button_text": "Shop Now",
+          "reasoning": "Higher contrast/visibility"
+        },
+        {
+          "variant": "Variant D",
+          "button_color": "Metallic Gold (#B8860B)",
+          "button_text": "Try Our Sampler",
+          "reasoning": "Combination of both changes"
+        }
+      ],
+      "primary_metric": "Conversion rate (clicks to purchase)",
+      "secondary_metrics": [
+        "CTA click-through rate",
+        "Average order value (AOV)",
+        "Trial Pack selection rate"
+      ],
+      "minimum_sample_size": "2,000 visitors per variant (4 variants = 8,000 total)",
+      "estimated_duration": "14-21 days",
+      "success_criteria": "Winning variant shows >20% improvement in conversion rate with p < 0.05",
+      "implementation_notes": "Run on homepage hero CTA and product listing page. Track which variant drives most Trial Pack purchases."
+    },
+    {
+      "experiment_id": "ab_test_03",
+      "name": "Product Page Layout: Image Gallery vs. Lifestyle Focus",
+      "hypothesis": "A product page layout emphasizing lifestyle images (people enjoying bites, chai pairings) will convert better than a traditional gallery of product shots, as it helps customers visualize usage.",
+      "test_type": "A/B test",
+      "variants": [
+        {
+          "variant": "Control (A)",
+          "layout": "Traditional gallery: Hero product shot + 3-4 detail/ingredient images",
+          "reasoning": "Standard e-commerce layout, product-focused"
+        },
+        {
+          "variant": "Variant B",
+          "layout": "Lifestyle-first: Hero lifestyle image + usage scenarios + 1 product detail shot",
+          "reasoning": "Emotional connection, usage visualization"
+        }
+      ],
+      "primary_metric": "Add-to-cart rate",
+      "secondary_metrics": [
+        "Time on product page",
+        "Image interaction rate (zooms, gallery clicks)",
+        "Scroll depth",
+        "Conversion rate"
+      ],
+      "minimum_sample_size": "1,200 product page visitors per variant",
+      "estimated_duration": "10-14 days",
+      "success_criteria": "Winning variant shows >10% improvement in add-to-cart rate",
+      "implementation_notes": "Test on Classic Til-Gud Bites product page first (highest traffic). If successful, roll out to all products."
+    },
+    {
+      "experiment_id": "ab_test_04",
+      "name": "Urgency Messaging: Scarcity vs. Freshness",
+      "hypothesis": "Messaging emphasizing freshness ('Made fresh in small batches daily') will outperform scarcity messaging ('Only 10 packs left') because the target audience values quality over FOMO for premium food products.",
+      "test_type": "A/B test",
+      "variants": [
+        {
+          "variant": "Control (A)",
+          "message": "Only {X} packs left in stock — order soon!",
+          "placement": "Product page, below Add to Cart button",
+          "reasoning": "Classic scarcity/urgency tactic"
+        },
+        {
+          "variant": "Variant B",
+          "message": "Fresh batch crafted today — ships within 24 hours ✓",
+          "placement": "Product page, below Add to Cart button",
+          "reasoning": "Emphasizes quality and artisan nature"
+        }
+      ],
+      "primary_metric": "Conversion rate",
+      "secondary_metrics": [
+        "Cart abandonment rate",
+        "Time to purchase decision",
+        "Customer satisfaction (post-purchase survey)"
+      ],
+      "minimum_sample_size": "1,000 product page visitors per variant",
+      "estimated_duration": "7-10 days",
+      "success_criteria": "Winning variant shows >12% improvement in conversion rate + equal or higher satisfaction scores",
+      "implementation_notes": "Monitor for any negative brand perception impact. Survey customers post-purchase asking what influenced their decision."
+    },
+    {
+      "experiment_id": "ab_test_05",
+      "name": "Bundle Messaging: Value vs. Variety",
+      "hypothesis": "Framing the Trial Pack as 'Discover Your Favorite Flavor' (variety-focused) will convert better than 'Best Value — 3 for the Price of 2' (price-focused) because premium customers prioritize experience over savings.",
+      "test_type": "A/B test",
+      "variants": [
+        {
+          "variant": "Control (A)",
+          "messaging": "Best Value — 3 Flavors, One Price",
+          "badge": "SAVE 20%",
+          "reasoning": "Price/value positioning"
+        },
+        {
+          "variant": "Variant B",
+          "messaging": "Discover Your Favorite — Try All 3 Flavors",
+          "badge": "SAMPLER",
+          "reasoning": "Experience/discovery positioning"
+        }
+      ],
+      "primary_metric": "Trial Pack conversion rate",
+      "secondary_metrics": [
+        "Click-through rate on Trial Pack listing",
+        "Repeat purchase rate (do customers return for full-size after trial?)",
+        "Average customer lifetime value (CLV)"
+      ],
+      "minimum_sample_size": "800 visitors to Trial Pack page per variant",
+      "estimated_duration": "10-14 days (plus 60-day follow-up to track repeat purchases)",
+      "success_criteria": "Winning variant shows >15% improvement in Trial Pack sales + higher repeat purchase rate within 60 days",
+      "implementation_notes": "Track long-term impact on customer retention. Variant that drives more repeat customers wins even if initial conversion is slightly lower."
+    }
+  ],
+  "testing_framework": {
+    "tools_recommended": [
+      "Google Optimize (free, integrates with Analytics)",
+      "VWO (Visual Website Optimizer)",
+      "Optimizely",
+      "AB Tasty"
+    ],
+    "statistical_significance": "Aim for 95% confidence level (p < 0.05) before declaring a winner",
+    "avoid_common_pitfalls": [
+      "Don't stop tests too early (wait for minimum sample size)",
+      "Don't test during unusual traffic spikes (festivals, sales)",
+      "Don't change multiple elements at once (unless multivariate)",
+      "Don't ignore mobile vs desktop performance differences"
+    ],
+    "prioritization": "Run experiments in this order: #1 (Hero Headline) → #2 (CTA) → #3 (Product Layout) → #4 (Urgency) → #5 (Bundle). Hero and CTA have highest traffic and biggest potential impact."
+  }
+}

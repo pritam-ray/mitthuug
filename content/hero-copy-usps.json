@@ -1,0 +1,113 @@
+{
+  "hero_copy": {
+    "variants_30_char": [
+      "Pure Til-Gud, Pure Joy",
+      "Sesame Bliss, Daily",
+      "Artisan Gud Bites"
+    ],
+    "variants_60_char": [
+      "MitthuuG — Handcrafted Sesame & Jaggery Bites for Every Day",
+      "Premium Til-Gud Bites: Ancient Wisdom, Modern Snacking",
+      "Crunchy Sesame, Pure Jaggery — Guilt-Free Indulgence"
+    ],
+    "variants_120_char": [
+      "MitthuuG — Premium Til-Gud Bites crafted with pure jaggery & roasted sesame. Ancient taste meets modern wellness. Perfect for gifting.",
+      "Handcrafted Sesame & Jaggery Bites — No refined sugar, no preservatives. Just honest nutrition wrapped in tradition. Shop now.",
+      "Discover MitthuuG: Artisan Til-Gud Bites made fresh daily. Pure ingredients, zero guilt. The snack your grandmother would approve."
+    ],
+    "hero_paragraph": [
+      "Handcrafted from pure jaggery and roasted seeds — your new go-to snack for every season.",
+      "Ancient wisdom meets modern wellness. Pure jaggery, crunchy sesame, zero compromises.",
+      "Traditional sweets, reworked for everyday snacking. No refined sugar, just honest goodness."
+    ],
+    "primary_cta": [
+      "Shop Now",
+      "Try Our Sampler",
+      "Explore Flavors"
+    ],
+    "secondary_cta": [
+      "View Gift Packs",
+      "Learn Our Story",
+      "See What's Inside"
+    ]
+  },
+  "usps": [
+    {
+      "id": "usp_1",
+      "title": "100% Natural Ingredients",
+      "tagline": "Pure jaggery, roasted sesame, zero preservatives — just like your grandmother made it.",
+      "supporting_line": "Every bite is made with organic jaggery and premium roasted seeds. No refined sugar, no artificial flavors.",
+      "icon_suggestion": "Leaf / Heart / CheckCircle",
+      "icon_name": "leaf",
+      "color_accent": "#6B8E23"
+    },
+    {
+      "id": "usp_2",
+      "title": "Handcrafted in Small Batches",
+      "tagline": "Made fresh daily in small batches to ensure premium quality and authentic taste.",
+      "supporting_line": "We craft each batch by hand to preserve traditional methods and guarantee freshness in every pack.",
+      "icon_suggestion": "Hand / Sparkles / Award",
+      "icon_name": "hand-heart",
+      "color_accent": "#C6862E"
+    },
+    {
+      "id": "usp_3",
+      "title": "Guilt-Free Indulgence",
+      "tagline": "Rich in iron, protein & healthy fats — snack smart without compromising on taste.",
+      "supporting_line": "Sesame and jaggery pack natural nutrients. Energy when you need it, wellness with every bite.",
+      "icon_suggestion": "Sparkles / Star / Zap",
+      "icon_name": "sparkles",
+      "color_accent": "#B8860B"
+    }
+  ],
+  "brand_promise": {
+    "headline": "Our Promise",
+    "subheadline": "Crafted with care, delivered with love",
+    "values": [
+      {
+        "title": "Pure Ingredients",
+        "description": "No preservatives, just honest goodness",
+        "icon": "heart"
+      },
+      {
+        "title": "Small Batch Craft",
+        "description": "Always fresh, always premium",
+        "icon": "sparkles"
+      },
+      {
+        "title": "Sustainable Packaging",
+        "description": "Guilt-free indulgence",
+        "icon": "package"
+      }
+    ]
+  },
+  "trust_indicators": {
+    "stats": [
+      {
+        "value": "100%",
+        "label": "Natural",
+        "sublabel": "No additives"
+      },
+      {
+        "value": "Hand",
+        "label": "Crafted",
+        "sublabel": "Small batches"
+      },
+      {
+        "value": "Zero",
+        "label": "Sugar",
+        "sublabel": "Only jaggery"
+      }
+    ],
+    "certifications": [
+      "FSSAI Certified",
+      "Made in India",
+      "Vegetarian"
+    ]
+  },
+  "value_propositions": {
+    "for_gifting": "Perfect for festivals, celebrations, or just because — MitthuuG makes thoughtful gifting delicious.",
+    "for_snacking": "Stash a pack in your desk drawer, gym bag, or kitchen. Your anytime energy boost.",
+    "for_wellness": "Sesame + jaggery = natural iron, calcium & antioxidants. Wellness that tastes incredible."
+  }
+}

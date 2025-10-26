@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supabase Connection Test</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .status {
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .success {
+      background: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    .error {
+      background: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    .loading {
+      background: #d1ecf1;
+      color: #0c5460;
+      border: 1px solid #bee5eb;
+    }
+    pre {
+      background: white;
+      padding: 15px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔍 Supabase Connection Test</h1>
+  
+  <div id="status" class="status loading">
+    <strong>Testing connection...</strong>
+  </div>
+  
+  <div id="results"></div>
+
+  <script type="module">
+    import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+
+    const supabaseUrl = 'https://ltakjmksbmovpfypteez.supabase.co';
+    const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx0YWtqbWtzYm1vdnBmeXB0ZWV6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE0MjEyMzYsImV4cCI6MjA3Njk5NzIzNn0.DzN6rGVh5x3hC_SvPTwcRjqcvIv4hWcKwxpo17uVCv8';
+
+    const supabase = createClient(supabaseUrl, supabaseKey);
+
+    const statusEl = document.getElementById('status');
+    const resultsEl = document.getElementById('results');
+
+    async function testConnection() {
+      try {
+        console.log('🔄 Testing Supabase connection...');
+        
+        // Test 1: Fetch products
+        const { data: products, error } = await supabase
+          .from('products')
+          .select('*')
+          .limit(5);
+
+        if (error) {
+          throw error;
+        }
+
+        // Success!
+        statusEl.className = 'status success';
+        statusEl.innerHTML = `
+          <strong>✅ Connection Successful!</strong><br>
+          <small>Found ${products.length} products in database</small>
+        `;
+
+        resultsEl.innerHTML = `
+          <h2>📦 Products:</h2>
+          <pre>${JSON.stringify(products, null, 2)}</pre>
+          
+          <h2>✅ Next Steps:</h2>
+          <ul>
+            <li>Your database is connected correctly</li>
+            <li>Environment variables are working</li>
+            <li>Open your React app at <a href="http://localhost:5173">http://localhost:5173</a></li>
+            <li>Check the browser console (F12) for any errors</li>
+          </ul>
+        `;
+
+      } catch (error) {
+        statusEl.className = 'status error';
+        statusEl.innerHTML = `
+          <strong>❌ Connection Failed</strong><br>
+          <small>${error.message}</small>
+        `;
+
+        resultsEl.innerHTML = `
+          <h2>🔍 Debugging Info:</h2>
+          <pre>${JSON.stringify({
+            error: error.message,
+            hint: error.hint,
+            details: error.details,
+            code: error.code
+          }, null, 2)}</pre>
+
+          <h2>💡 Common Issues:</h2>
+          <ul>
+            <li><strong>PGRST116:</strong> Table doesn't exist - Run migrations in Supabase SQL Editor</li>
+            <li><strong>401:</strong> Invalid API key - Check .env.local credentials</li>
+            <li><strong>RLS:</strong> Row Level Security blocking - Check policies in Supabase</li>
+          </ul>
+        `;
+      }
+    }
+
+    testConnection();
+  </script>
+</body>
+</html>

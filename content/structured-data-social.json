@@ -1,0 +1,273 @@
+{
+  "structured_data": {
+    "organization_schema": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MitthuuG",
+      "alternateName": "MitthuuG Artisan Foods",
+      "url": "https://www.mitthuug.com",
+      "logo": "https://www.mitthuug.com/assets/logo.png",
+      "description": "MitthuuG crafts premium til-gud bites using traditional recipes and organic ingredients. Handcrafted sesame and jaggery snacks with no refined sugar.",
+      "foundingDate": "2024",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "[Founder Name]"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN",
+        "addressRegion": "[State]",
+        "addressLocality": "[City]"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-[PHONE]",
+        "contactType": "Customer Service",
+        "email": "hello@mitthuug.com",
+        "availableLanguage": ["English", "Hindi"]
+      },
+      "sameAs": [
+        "https://www.instagram.com/mitthuug",
+        "https://www.facebook.com/mitthuug",
+        "https://twitter.com/mitthuug",
+        "https://www.linkedin.com/company/mitthuug"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "247",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    "product_schema_examples": [
+      {
+        "product_name": "Classic Til-Gud Bites",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Classic Til-Gud Bites",
+          "description": "Handcrafted til-gud bites made with roasted white sesame seeds and organic jaggery. No refined sugar, no preservatives. Rich in iron and calcium.",
+          "brand": {
+            "@type": "Brand",
+            "name": "MitthuuG"
+          },
+          "sku": "MTG-CLT-100",
+          "gtin": "[GTIN if available]",
+          "image": [
+            "https://www.mitthuug.com/images/classic-til-gud-hero.jpg",
+            "https://www.mitthuug.com/images/classic-til-gud-closeup.jpg",
+            "https://www.mitthuug.com/images/classic-til-gud-ingredients.jpg"
+          ],
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.mitthuug.com/shop/classic-til-gud-bites",
+            "priceCurrency": "INR",
+            "price": "149",
+            "priceValidUntil": "2025-12-31",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+              "@type": "Organization",
+              "name": "MitthuuG"
+            },
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": "0",
+                "currency": "INR"
+              },
+              "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": "IN"
+              },
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": "0",
+                  "maxValue": "1",
+                  "unitCode": "DAY"
+                },
+                "transitTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": "3",
+                  "maxValue": "5",
+                  "unitCode": "DAY"
+                }
+              }
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "142",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": "Priya Sharma"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "reviewBody": "Absolutely love these! Perfect crunch and not overly sweet. Reminds me of my grandmother's homemade til-gud."
+            }
+          ],
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "Dietary",
+              "value": "Vegan, Gluten-Free"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Allergens",
+              "value": "Contains Sesame"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Weight",
+              "value": "100g"
+            }
+          ],
+          "nutrition": {
+            "@type": "NutritionInformation",
+            "calories": "450 calories",
+            "proteinContent": "8g",
+            "fatContent": "22g",
+            "carbohydrateContent": "55g",
+            "fiberContent": "5g"
+          }
+        }
+      },
+      {
+        "product_name": "Premium Gift Box 500g",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "MitthuuG Premium Gift Box",
+          "description": "Luxury gift box containing 500g of assorted handcrafted til-gud bites (Classic, Cardamom, Almond). Premium packaging with ribbon and greeting card. Perfect for festivals and corporate gifting.",
+          "brand": {
+            "@type": "Brand",
+            "name": "MitthuuG"
+          },
+          "sku": "MTG-GIFT-500",
+          "image": [
+            "https://www.mitthuug.com/images/gift-box-hero-closed.jpg",
+            "https://www.mitthuug.com/images/gift-box-open-display.jpg",
+            "https://www.mitthuug.com/images/gift-box-lifestyle-celebration.jpg"
+          ],
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.mitthuug.com/shop/premium-gift-box-500g",
+            "priceCurrency": "INR",
+            "price": "799",
+            "priceValidUntil": "2025-12-31",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+              "@type": "Organization",
+              "name": "MitthuuG"
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "89",
+            "bestRating": "5"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "Includes",
+              "value": "Gift box, ribbon, greeting card, 500g assorted bites"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Occasion",
+              "value": "Diwali, Weddings, Corporate Gifts, Housewarming"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "social_media_copy": {
+    "instagram_captions": [
+      {
+        "id": "ig_01",
+        "caption": "Tradition you can taste. 🍯✨\n\nOur Classic Til-Gud Bites are made the way your grandmother would approve — roasted sesame, pure jaggery, nothing else. No refined sugar, no shortcuts, just honest goodness handcrafted fresh daily.\n\nSwipe to see what goes into every bite. 👉\n\n#MitthuuG #TilGud #HealthySnacking #TraditionalSweets #Handcrafted #NoRefinedSugar #SesameJaggery #CleanEating #IndianSnacks #ArtisanFood",
+        "cta": "Shop now — link in bio 🛒",
+        "hashtags": 10
+      },
+      {
+        "id": "ig_02",
+        "caption": "Winter called. It wants its snack back. ❄️🔥\n\nSesame + jaggery = nature's perfect winter fuel. Warming, energizing, packed with iron & calcium. This isn't just a snack — it's Ayurvedic wisdom in every bite.\n\nStay warm, stay nourished. 💛\n\n#MitthuuG #WinterSnacks #TilGud #Ayurveda #SesameSeeds #Jaggery #WellnessWednesday #HealthyLiving #TraditionalWisdom #NaturalEnergy",
+        "cta": "Try our Cardamom variant — link in bio",
+        "hashtags": 10
+      },
+      {
+        "id": "ig_03",
+        "caption": "Plot twist: Your desk snack can actually be healthy. 🤯\n\nMeet your new 3 PM hero — MitthuuG Almond Til-Gud Bites. Protein-packed, naturally sweet, zero guilt. Stash a pack at work and thank us later.\n\n✅ No refined sugar\n✅ High protein\n✅ Sustained energy\n✅ Actually delicious\n\nUpgrade your snack drawer. You deserve better than vending machine junk.\n\n#MitthuuG #HealthySnacks #OfficeSnacks #ProteinSnack #AlmondBites #CleanEating #FitnessFood #WorkLifeBalance #SnackSmart",
+        "cta": "Order now — link in bio 💼",
+        "hashtags": 9
+      },
+      {
+        "id": "ig_04",
+        "caption": "Gifting season sorted. 🎁✨\n\nForget generic mithai boxes. This year, gift something memorable — our Premium Gift Box with handcrafted til-gud bites, luxury packaging, and a personalized greeting card.\n\nPerfect for Diwali, weddings, corporate gifts, or just because. (Swipe to see the unboxing experience 😍)\n\n#MitthuuG #GiftIdeas #DiwaliGifts #PremiumGifting #CorporateGifts #WeddingFavors #LuxuryPackaging #ThoughtfulGifts #IndianFestivals #TraditionalSweets",
+        "cta": "Shop gift boxes — link in bio 🎀",
+        "hashtags": 10
+      },
+      {
+        "id": "ig_05",
+        "caption": "Small batch. Big flavor. Zero compromises. 👨‍🍳\n\nBehind every pack of MitthuuG is a team that cares. We roast, blend, craft, and pack by hand — ensuring every bite meets our (very high) standards.\n\nThis is what happens when you refuse to scale at the cost of quality. This is artisan. This is MitthuuG.\n\nSwipe to see our kitchen in action. 👉\n\n#MitthuuG #SmallBatch #Handcrafted #ArtisanFood #MadeWithLove #FoodCraft #BehindTheScenes #QualityOverQuantity #IndianFoodBrand #MadeInIndia",
+        "cta": "Taste the difference — link in bio",
+        "hashtags": 10
+      }
+    ],
+    "twitter_posts": [
+      {
+        "id": "tw_01",
+        "text": "Til-gud isn't just for Makar Sankranti anymore. Make it your everyday ritual. 🍯✨ #MitthuuG #HealthySnacking"
+      },
+      {
+        "id": "tw_02",
+        "text": "Plot twist: The healthiest snack in your pantry is also the most delicious. Meet MitthuuG til-gud bites — sesame, jaggery, zero guilt. 🙌"
+      },
+      {
+        "id": "tw_03",
+        "text": "Your grandmother was onto something. Sesame + jaggery = winter superfood. We just made it portable. ❄️ #TraditionalWisdom #ModernSnacking"
+      },
+      {
+        "id": "tw_04",
+        "text": "Reminder: You deserve snacks that actually nourish you. Try MitthuuG — handcrafted, no refined sugar, 100% natural. Your body will thank you. 💛"
+      },
+      {
+        "id": "tw_05",
+        "text": "Gifting tip: Skip the generic mithai. Give MitthuuG's Premium Gift Box instead. Thoughtful, delicious, Instagram-worthy. 🎁✨ #GiftingDoneRight"
+      }
+    ],
+    "whatsapp_share_messages": [
+      {
+        "id": "wa_01",
+        "message": "🍯 Just discovered MitthuuG — handcrafted til-gud bites with NO refined sugar! Pure sesame & jaggery, super healthy & delicious. Check them out! 👉 [LINK]"
+      },
+      {
+        "id": "wa_02",
+        "message": "Looking for Diwali gift ideas? Found the perfect option — MitthuuG Premium Gift Box! Traditional sweets, modern packaging 🎁✨ [LINK]"
+      },
+      {
+        "id": "wa_03",
+        "message": "Craving something sweet but healthy? Try MitthuuG til-gud bites — vegan, gluten-free, packed with iron & calcium. My new favorite snack! 😋 [LINK]"
+      }
+    ]
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "products": [
+    {
+      "sku": "MTG-CLT-100",
+      "title": "Classic Til-Gud Bites",
+      "slug": "classic-til-gud-bites",
+      "price_suggestion": 149,
+      "weight": "100g",
+      "short_desc": "The original! Crunchy roasted sesame meets pure jaggery in every bite.",
+      "medium_desc_40_60": "Our signature recipe — roasted white sesame seeds caramelized with organic jaggery. Perfectly crunchy, naturally sweet, and packed with iron & calcium. The taste of tradition, made fresh daily.",
+      "long_desc_120_160": "MitthuuG Classic Til-Gud Bites are where our story began. We take premium white sesame seeds, roast them to golden perfection, then blend with pure organic jaggery using time-honored techniques. Each bite delivers that perfect crunch followed by deep, caramel-like sweetness — no refined sugar, no preservatives, just two ingredients your grandmother would recognize. Rich in iron, calcium, and healthy fats, these bites are your guilt-free energy boost. Perfect with chai, as a post-workout snack, or straight from the pack when cravings strike. Handcrafted in small batches to ensure every piece meets our exacting standards.",
+      "bullets": [
+        "100% natural — only sesame & jaggery",
+        "Rich in iron, calcium & protein",
+        "No refined sugar or preservatives",
+        "Handcrafted in small batches",
+        "Vegan & gluten-free",
+        "Perfect for gifting or daily snacking"
+      ],
+      "ingredients": "White sesame seeds (70%), Organic jaggery (30%)",
+      "nutrition_highlights": [
+        "Iron: 4.2mg per 100g (supports energy)",
+        "Calcium: 280mg per 100g (bone health)",
+        "Protein: 8g per 100g",
+        "Healthy fats from sesame",
+        "Low glycemic index from jaggery"
+      ],
+      "storage_instructions": "Store in an airtight container in a cool, dry place. Best consumed within 45 days of opening. No refrigeration required.",
+      "allergen_info": "Contains: Sesame. May contain traces of nuts.",
+      "shelf_life": "6 months from manufacture",
+      "cta_primary": "Add to Cart",
+      "cta_secondary": "Buy Now",
+      "cta_upsell": "Try Our Trial Pack",
+      "addon_suggestions": [
+        "Add gift wrapping (+₹50)",
+        "Include a greeting card (+₹25)",
+        "Subscribe & Save 10%"
+      ],
+      "alt_text": "Classic Til-Gud Bites by MitthuuG - handcrafted sesame jaggery snacks in premium packaging",
+      "meta_title": "Classic Til-Gud Bites | Pure Sesame & Jaggery | MitthuuG",
+      "meta_description": "Handcrafted Classic Til-Gud Bites with roasted sesame & organic jaggery. No refined sugar. Rich in iron & calcium. Order fresh, premium til ravadhi online.",
+      "images": [
+        "classic-til-gud-hero.jpg",
+        "classic-til-gud-closeup.jpg",
+        "classic-til-gud-ingredients.jpg",
+        "classic-til-gud-lifestyle.jpg"
+      ],
+      "gallery_captions": [
+        "MitthuuG Classic Til-Gud Bites — 100g premium pack",
+        "Golden, crunchy perfection in every bite",
+        "Just two ingredients: sesame & jaggery",
+        "Your anytime energy boost"
+      ]
+    },
+    {
+      "sku": "MTG-CDM-100",
+      "title": "Cardamom Til-Gud Bites",
+      "slug": "cardamom-til-gud-bites",
+      "price_suggestion": 169,
+      "weight": "100g",
+      "short_desc": "Classic til-gud elevated with aromatic green cardamom — a premium twist.",
+      "medium_desc_40_60": "Our signature blend gets a royal upgrade. Roasted sesame, pure jaggery, and hand-crushed green cardamom create a fragrant, sophisticated treat. Warm spice meets sweet crunch — perfectly balanced, utterly addictive.",
+      "long_desc_120_160": "For those who love a little extra warmth, our Cardamom Til-Gud Bites bring aromatic complexity to the classic recipe. We start with premium roasted sesame and organic jaggery, then fold in freshly crushed green cardamom — the queen of spices. The result? A fragrant, slightly warming bite that's both comforting and elegant. Cardamom aids digestion and adds natural antioxidants, making this variant perfect after meals or with your evening chai. Each batch is handcrafted to ensure the cardamom's essential oils are preserved, delivering that distinctive floral-spicy note in every piece. This is tradition with a premium twist — the taste grandmothers aspired to when guests came calling.",
+      "bullets": [
+        "Premium green cardamom infusion",
+        "Aids digestion naturally",
+        "Aromatic & sophisticated flavor",
+        "Rich in antioxidants",
+        "100% natural ingredients",
+        "Perfect post-meal treat"
+      ],
+      "ingredients": "White sesame seeds (68%), Organic jaggery (30%), Green cardamom powder (2%)",
+      "nutrition_highlights": [
+        "Iron & calcium from sesame",
+        "Digestive support from cardamom",
+        "Natural antioxidants",
+        "Protein: 8g per 100g",
+        "Low glycemic sweetness"
+      ],
+      "storage_instructions": "Store in an airtight container away from direct sunlight. Best consumed within 45 days. The cardamom stays fragrant longer when stored properly.",
+      "allergen_info": "Contains: Sesame. May contain traces of nuts.",
+      "shelf_life": "6 months from manufacture",
+      "cta_primary": "Add to Cart",
+      "cta_secondary": "Buy Now",
+      "cta_upsell": "Pair with Classic for Variety",
+      "addon_suggestions": [
+        "Premium gift box (+₹100)",
+        "Add a greeting card (+₹25)",
+        "Subscribe monthly & save"
+      ],
+      "alt_text": "Cardamom Til-Gud Bites - premium sesame jaggery snacks with green cardamom by MitthuuG",
+      "meta_title": "Cardamom Til-Gud Bites | Aromatic Sesame Snacks | MitthuuG",
+      "meta_description": "Premium Cardamom Til-Gud Bites with green cardamom, roasted sesame & jaggery. Natural, aromatic, aids digestion. Order artisan til ravadhi online.",
+      "images": [
+        "cardamom-til-gud-hero.jpg",
+        "cardamom-til-gud-texture.jpg",
+        "cardamom-pods-ingredients.jpg",
+        "cardamom-til-gud-chai.jpg"
+      ],
+      "gallery_captions": [
+        "Cardamom Til-Gud Bites — aromatic premium variant",
+        "Fragrant cardamom in every piece",
+        "Green cardamom meets roasted sesame",
+        "Perfect companion to your chai ritual"
+      ]
+    },
+    {
+      "sku": "MTG-ALM-100",
+      "title": "Almond Til-Gud Bites",
+      "slug": "almond-til-gud-bites",
+      "price_suggestion": 199,
+      "weight": "100g",
+      "short_desc": "Crunchy almonds join sesame & jaggery — nutty, nutritious, next-level.",
+      "medium_desc_40_60": "Upgrade your snack game. We've added roasted California almonds to our classic til-gud base for extra crunch and nutrition. Packed with protein, vitamin E, and healthy fats — this is premium snacking at its finest.",
+      "long_desc_120_160": "Our Almond Til-Gud Bites are the ultimate power snack. We combine our signature roasted sesame and organic jaggery base with premium California almonds — sliced, roasted, and folded in for maximum flavor and texture. The result is a multi-layered crunch experience: nutty almonds, toasty sesame, and rich jaggery sweetness in perfect harmony. Almonds bring extra protein, vitamin E for skin health, and heart-healthy fats, making this variant ideal for active lifestyles, travel, or anyone seeking nutrient-dense indulgence. Each bite delivers sustained energy without the sugar crash. Handcrafted with care, this is what happens when tradition meets modern nutrition science.",
+      "bullets": [
+        "Premium California almonds added",
+        "Extra protein & vitamin E",
+        "Heart-healthy fats",
+        "Sustained energy, no crash",
+        "Perfect for active lifestyles",
+        "Handcrafted in small batches"
+      ],
+      "ingredients": "White sesame seeds (55%), Organic jaggery (30%), California almonds (15%)",
+      "nutrition_highlights": [
+        "Protein: 12g per 100g (high protein)",
+        "Vitamin E for skin health",
+        "Omega-3 from almonds",
+        "Iron & calcium from sesame",
+        "Low glycemic index"
+      ],
+      "storage_instructions": "Store in an airtight container in a cool place. Almonds stay crunchy when moisture-free. Best within 45 days of opening.",
+      "allergen_info": "Contains: Sesame, Tree nuts (almonds). May contain traces of other nuts.",
+      "shelf_life": "6 months from manufacture",
+      "cta_primary": "Add to Cart",
+      "cta_secondary": "Buy Now",
+      "cta_upsell": "Try All 3 Flavors — Trial Pack",
+      "addon_suggestions": [
+        "Luxury gift box (+₹150)",
+        "Add a personalized note (+₹25)",
+        "Subscribe & save 15%"
+      ],
+      "alt_text": "Almond Til-Gud Bites - sesame jaggery snacks with California almonds - premium healthy snacks by MitthuuG",
+      "meta_title": "Almond Til-Gud Bites | Protein-Rich Sesame Snacks | MitthuuG",
+      "meta_description": "Almond Til-Gud Bites with California almonds, sesame & jaggery. High protein, vitamin E, heart-healthy. Premium til ravadhi online India.",
+      "images": [
+        "almond-til-gud-hero.jpg",
+        "almond-til-gud-cross-section.jpg",
+        "almond-til-gud-ingredients-spread.jpg",
+        "almond-til-gud-energy.jpg"
+      ],
+      "gallery_captions": [
+        "Almond Til-Gud Bites — premium protein-packed variant",
+        "California almonds in every bite",
+        "Triple texture: almonds, sesame, jaggery",
+        "Your on-the-go energy solution"
+      ]
+    },
+    {
+      "sku": "MTG-TRIAL-50",
+      "title": "MitthuuG Trial Pack",
+      "slug": "trial-pack-3-flavors",
+      "price_suggestion": 199,
+      "weight": "50g x 3 flavors",
+      "short_desc": "Can't decide? Try all three flavors — Classic, Cardamom & Almond in one pack.",
+      "medium_desc_40_60": "New to MitthuuG? Start here. Our Trial Pack includes 50g each of Classic, Cardamom, and Almond Til-Gud Bites. Discover your favorite or mix and match for variety. Perfect introduction to artisan til-gud.",
+      "long_desc_120_160": "Not sure which flavor to commit to? Our Trial Pack is your perfect starting point. You get three 50g packs — one each of Classic, Cardamom, and Almond Til-Gud Bites — beautifully packaged in a sampler box. It's the ideal way to explore the MitthuuG range, find your personal favorite, or simply enjoy variety throughout the week. Many customers gift this pack to friends and family as an introduction to healthier snacking. Each variant is individually sealed to preserve freshness and flavor. Whether you're treating yourself or introducing someone special to our craft, the Trial Pack delivers premium variety at an accessible price. Most customers tell us they end up loving all three — and that's exactly why we created this bundle.",
+      "bullets": [
+        "3 flavors: Classic, Cardamom, Almond",
+        "50g of each variant (150g total)",
+        "Beautifully packaged sampler",
+        "Perfect gift for first-timers",
+        "Discover your favorite flavor",
+        "Great value bundle"
+      ],
+      "ingredients": "Pack 1: Sesame, jaggery | Pack 2: Sesame, jaggery, cardamom | Pack 3: Sesame, jaggery, almonds",
+      "nutrition_highlights": [
+        "Variety of nutrients across flavors",
+        "Iron, calcium, protein",
+        "Healthy fats & antioxidants",
+        "No refined sugar in any variant",
+        "Perfect portion sizes"
+      ],
+      "storage_instructions": "Each pack is individually sealed. Store unopened packs in a cool, dry place. Once opened, consume within 2 weeks for best freshness.",
+      "allergen_info": "Contains: Sesame, Tree nuts (almonds in one variant). May contain traces of other nuts.",
+      "shelf_life": "6 months from manufacture",
+      "cta_primary": "Try All Three",
+      "cta_secondary": "Add to Cart",
+      "cta_upsell": "Loved It? Get Full Size Packs",
+      "addon_suggestions": [
+        "Upgrade to gift wrap (+₹50)",
+        "Include greeting card (+₹25)",
+        "Add 3 more trial packs (share with friends)"
+      ],
+      "alt_text": "MitthuuG Trial Pack - sampler with Classic, Cardamom and Almond til-gud bites - healthy sesame snacks gift set",
+      "meta_title": "Trial Pack — 3 Flavors Til-Gud Bites Sampler | MitthuuG",
+      "meta_description": "Try all 3 MitthuuG flavors! Trial Pack includes Classic, Cardamom & Almond til-gud bites. Perfect gift or sampler. Order til ravadhi variety pack.",
+      "images": [
+        "trial-pack-hero.jpg",
+        "trial-pack-all-three.jpg",
+        "trial-pack-open-display.jpg",
+        "trial-pack-gifting.jpg"
+      ],
+      "gallery_captions": [
+        "MitthuuG Trial Pack — explore all three flavors",
+        "Classic, Cardamom & Almond in one box",
+        "Perfect introduction to MitthuuG",
+        "Great for gifting or self-discovery"
+      ]
+    },
+    {
+      "sku": "MTG-GIFT-500",
+      "title": "MitthuuG Premium Gift Box",
+      "slug": "premium-gift-box-500g",
+      "price_suggestion": 799,
+      "weight": "500g (mixed flavors)",
+      "short_desc": "The ultimate til-gud gift — 500g of handcrafted goodness in luxury packaging.",
+      "medium_desc_40_60": "Make every occasion memorable. Our Premium Gift Box contains 500g of assorted Til-Gud Bites in elegant packaging with ribbon and greeting card. Perfect for festivals, celebrations, corporate gifting, or heartfelt thank-yous.",
+      "long_desc_120_160": "Some moments deserve something extraordinary. Our Premium Gift Box is MitthuuG's signature gifting solution — 500g of our finest Til-Gud Bites (mix of Classic, Cardamom, and Almond) presented in a luxurious box with gold foil accents, satin ribbon, and space for a personalized greeting card. Whether it's Diwali, a wedding favor, corporate appreciation, or a heartfelt thank-you, this gift says you care about quality and tradition. Each piece inside is handcrafted to perfection and individually wrapped for elegance. The box itself is reusable and designed to be kept as a keepsake. Recipients consistently tell us this is the best mithai alternative they've received — memorable, thoughtful, and delicious. We also offer custom corporate branding on bulk orders (minimum 25 boxes). Make your gesture unforgettable with MitthuuG.",
+      "bullets": [
+        "500g assorted flavors (mix of all 3)",
+        "Luxury packaging with gold accents",
+        "Includes satin ribbon & greeting card",
+        "Perfect for festivals & celebrations",
+        "Reusable keepsake box",
+        "Corporate branding available (bulk orders)"
+      ],
+      "ingredients": "Assorted mix: Classic (sesame, jaggery), Cardamom (sesame, jaggery, cardamom), Almond (sesame, jaggery, almonds)",
+      "nutrition_highlights": [
+        "Variety of nutrients across flavors",
+        "Rich in iron, calcium & protein",
+        "Heart-healthy fats & antioxidants",
+        "No refined sugar",
+        "Thoughtful indulgence"
+      ],
+      "storage_instructions": "Store in a cool, dry place. Individual wrapping preserves freshness. Best consumed within 60 days. The box makes a beautiful storage container too.",
+      "allergen_info": "Contains: Sesame, Tree nuts (almonds). May contain traces of other nuts.",
+      "shelf_life": "6 months from manufacture",
+      "cta_primary": "Send a Gift Box",
+      "cta_secondary": "Add to Cart",
+      "cta_upsell": "Order in Bulk (10+ Boxes)",
+      "addon_suggestions": [
+        "Add personalized message card (+₹50)",
+        "Express gift delivery (+₹100)",
+        "Corporate branding (bulk orders only)"
+      ],
+      "alt_text": "MitthuuG Premium Gift Box - luxury 500g til-gud bites gift set with ribbon and card - perfect festival corporate gifting",
+      "meta_title": "Premium Gift Box 500g | Luxury Til-Gud Bites Gift | MitthuuG",
+      "meta_description": "MitthuuG Premium Gift Box — 500g handcrafted til-gud bites in luxury packaging. Perfect for Diwali, weddings, corporate gifts. Order now.",
+      "images": [
+        "gift-box-hero-closed.jpg",
+        "gift-box-open-display.jpg",
+        "gift-box-ribbon-detail.jpg",
+        "gift-box-lifestyle-celebration.jpg"
+      ],
+      "gallery_captions": [
+        "Premium Gift Box — 500g of handcrafted excellence",
+        "Luxury packaging that impresses",
+        "Every detail designed for delight",
+        "Make every occasion memorable"
+      ]
+    }
+  ]
+}

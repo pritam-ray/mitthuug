@@ -1,0 +1,126 @@
+/* MitthuuG Design Tokens */
+/* Brand Colors - Use CSS variables for easy theming */
+
+:root {
+  /* Primary Palette */
+  --color-primary: #C6862E;           /* Ochre/Sesame Gold */
+  --color-primary-dark: #A66F25;      /* Darker variant */
+  --color-primary-light: #D89D4A;     /* Lighter variant */
+  
+  --color-secondary: #4B2E2A;         /* Chocolate Brown */
+  --color-secondary-dark: #3A2321;    /* Darker variant */
+  --color-secondary-light: #5C3935;   /* Lighter variant */
+  
+  --color-accent: #B8860B;            /* Metallic Gold */
+  --color-accent-dark: #9A7009;       /* Darker variant */
+  --color-accent-light: #D4A020;      /* Lighter variant */
+  
+  --color-natural: #6B8E23;           /* Olive Green */
+  --color-natural-dark: #56721C;      /* Darker variant */
+  --color-natural-light: #7FA62E;     /* Lighter variant */
+  
+  /* Neutral Palette */
+  --color-background: #F6F0E1;        /* Ivory */
+  --color-surface: #FFFFFF;           /* White */
+  --color-cream: #FFF8E7;             /* Light cream */
+  --color-sand: #E8DCC8;              /* Sand */
+  --color-border: #D4C5B0;            /* Border color */
+  
+  /* Text Colors */
+  --color-text-primary: #2C1810;      /* Almost black */
+  --color-text-secondary: #4B2E2A;    /* Chocolate brown */
+  --color-text-muted: #6B5B54;        /* Muted brown */
+  --color-text-inverse: #FFFFFF;      /* White text */
+  
+  /* Semantic Colors */
+  --color-success: #6B8E23;           /* Olive green */
+  --color-error: #D32F2F;             /* Red */
+  --color-warning: #F57C00;           /* Orange */
+  --color-info: #1976D2;              /* Blue */
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  
+  /* Spacing Scale (based on 4px) */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;    /* 4px */
+  --radius-md: 0.5rem;     /* 8px */
+  --radius-lg: 1rem;       /* 16px */
+  --radius-xl: 1.5rem;     /* 24px */
+  --radius-2xl: 2rem;      /* 32px */
+  --radius-full: 9999px;   /* Pill shape */
+  
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Z-index Scale */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+  
+  /* Container Widths */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+  
+  /* Breakpoints (for JS usage) */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+/* Dark mode support (future-ready) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #1A1410;
+    --color-surface: #2C1E1A;
+    --color-text-primary: #F6F0E1;
+    --color-text-secondary: #E8DCC8;
+    --color-text-muted: #A89B91;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary: #A66F25;
+    --color-text-primary: #000000;
+    --color-border: #8B7355;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-base: 0ms;
+    --transition-slow: 0ms;
+  }
+}
