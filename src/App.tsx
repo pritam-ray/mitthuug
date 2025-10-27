@@ -7,6 +7,7 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import CartDrawer from './components/cart/CartDrawer';
 import ProtectedRoute from './components/routing/ProtectedRoute';
+import AdminLayout from './components/layout/AdminLayout';
 import HomePage from './pages/HomePage';
 import ShopPage from './pages/ShopPage';
 import ProductDetailPage from './pages/ProductDetailPage';
@@ -18,6 +19,7 @@ import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
 import OrderTrackingPage from './pages/OrderTrackingPage';
 import WishlistPage from './pages/WishlistPage';
+import AdminDashboard from './pages/admin/AdminDashboard';
 
 function AppContent() {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -64,6 +66,12 @@ function AppContent() {
           <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/track-order" element={<OrderTrackingPage />} />
           <Route path="/faq" element={<FAQPage />} />
+          
+          {/* Admin Routes */}
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route index element={<AdminDashboard />} />
+            {/* More admin routes will be added here */}
+          </Route>
         </Routes>
       </main>
 
