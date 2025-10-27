@@ -61,12 +61,13 @@ export const Modal: React.FC<ModalProps> = ({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/70 backdrop-blur-md z-modal-backdrop"
+            className="fixed inset-0 bg-black/70 backdrop-blur-md"
+            style={{ zIndex: 999998 }}
             onClick={closeOnBackdropClick ? onClose : undefined}
           />
 
           {/* Modal */}
-          <div className="fixed inset-0 z-modal flex items-center justify-center p-4 overflow-y-auto">
+          <div className="fixed inset-0 flex items-center justify-center p-4 overflow-y-auto" style={{ zIndex: 999999 }}>
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}

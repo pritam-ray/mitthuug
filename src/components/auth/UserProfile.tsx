@@ -47,8 +47,8 @@ export const UserProfile: React.FC<UserProfileProps> = ({ isOpen, onClose }) => 
 
   return (
     <>
-      <div className="fixed inset-0 bg-black/75 z-modal-backdrop backdrop-blur-md" onClick={onClose}></div>
-      <div className="fixed inset-0 z-modal flex items-center justify-center p-4">
+      <div className="fixed inset-0 bg-black/75 backdrop-blur-md" style={{ zIndex: 999998 }} onClick={onClose}></div>
+      <div className="fixed inset-0 flex items-center justify-center p-4" style={{ zIndex: 999999 }}>
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}

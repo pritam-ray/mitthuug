@@ -59,7 +59,8 @@ const CartDrawer: React.FC<CartDrawerProps> = ({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-black/50 z-modal"
+            className="fixed inset-0 bg-black/50"
+            style={{ zIndex: 999998 }}
           />
 
           {/* Drawer */}
@@ -68,7 +69,8 @@ const CartDrawer: React.FC<CartDrawerProps> = ({
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-            className="fixed right-0 top-0 h-full w-full sm:w-96 bg-white shadow-xl z-modal flex flex-col"
+            className="fixed right-0 top-0 h-full w-full sm:w-96 bg-white shadow-xl flex flex-col"
+            style={{ zIndex: 999999 }}
           >
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-gray-200">

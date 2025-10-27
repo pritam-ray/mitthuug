@@ -93,11 +93,12 @@ const AuthModal = ({ isOpen, onClose, defaultMode = 'login' }: AuthModalProps) =
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-black/75 backdrop-blur-md z-modal-backdrop"
+            className="fixed inset-0 bg-black/75 backdrop-blur-md"
+            style={{ zIndex: 999998 }}
           />
 
           {/* Modal */}
-          <div className="fixed inset-0 flex items-center justify-center z-modal p-4">
+          <div className="fixed inset-0 flex items-center justify-center p-4" style={{ zIndex: 999999 }}>
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
