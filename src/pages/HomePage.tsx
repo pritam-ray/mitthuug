@@ -1,16 +1,15 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Star, Heart, Leaf, Award, TruckIcon, Shield, ChevronRight } from 'lucide-react';
 import Button from '../components/ui/Button';
 import ProductCard from '../components/product/ProductCard';
 import Badge from '../components/ui/Badge';
+import NewsletterForm from '../components/ui/NewsletterForm';
 import { useProducts } from '../hooks';
 import { useCart } from '../contexts/CartContext';
 
 function HomePage() {
   // All hooks must be called at the top level, before any early returns
-  const [email, setEmail] = useState('');
   const { products: featuredProducts, loading, error } = useProducts({ 
     featured: true 
   });
@@ -346,19 +345,7 @@ function HomePage() {
             <p className="text-xl text-white/90 mb-10">
               Get exclusive recipes, health tips, and 10% off your first order!
             </p>
-            <form className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 px-6 py-4 rounded-xl text-gray-900 focus:outline-none focus:ring-4 focus:ring-white/30 shadow-lg"
-                required
-              />
-              <Button type="submit" variant="secondary" size="lg" className="shadow-lg">
-                Subscribe
-              </Button>
-            </form>
+            <NewsletterForm />
             <p className="text-sm text-white/70 mt-6">
               No spam, ever. Unsubscribe anytime.
             </p>

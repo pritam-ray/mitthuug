@@ -5,6 +5,7 @@ import { Calendar, User, Clock, ArrowLeft, Share2, Facebook, Twitter, Linkedin, 
 import Breadcrumbs from '../components/ui/Breadcrumbs';
 import Button from '../components/ui/Button';
 import Badge from '../components/ui/Badge';
+import NewsletterForm from '../components/ui/NewsletterForm';
 
 // Mock blog post data (will be replaced with Supabase data later)
 const BLOG_POSTS = {
@@ -276,17 +277,7 @@ const BlogPostPage: React.FC = () => {
             <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
               Subscribe to our newsletter for weekly health tips, recipes, and exclusive offers.
             </p>
-            <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-6 py-4 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white/50"
-                required
-              />
-              <Button type="submit" variant="secondary" size="lg">
-                Subscribe
-              </Button>
-            </form>
+            <NewsletterForm />
           </motion.div>
 
           {/* Back to Blog */}
