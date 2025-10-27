@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ShoppingCart, User, Search, LogOut, Package, Heart } from 'lucide-react';
 import Button from '../ui/Button';
 import Badge from '../ui/Badge';
+import SearchBar from '../ui/SearchBar';
 import LoginSignupModal from '../auth/LoginSignupModal';
 import { useAuth } from '../../contexts/AuthContext';
 
@@ -300,8 +301,11 @@ const Header: React.FC<HeaderProps> = ({
         </AnimatePresence>
       </div>
 
-      {/* Login/Signup Modal */}
-      <LoginSignupModal 
+      {/* Search Bar Overlay */}
+      <SearchBar isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
+
+      {/* Auth Modal */}
+      <LoginSignupModal
         isOpen={authModalOpen}
         onClose={() => setAuthModalOpen(false)}
       />

@@ -32,6 +32,7 @@ interface UseProductsOptions {
   maxPrice?: number;
   search?: string;
   featured?: boolean;
+  limit?: number;
   autoFetch?: boolean;
 }
 
@@ -40,7 +41,7 @@ export const useProducts = (options: UseProductsOptions = {}) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
 
-  const { autoFetch = true, featured, ...filters } = options;
+  const { autoFetch = true, featured, limit, ...filters } = options;
 
   useEffect(() => {
     if (!autoFetch) return;
@@ -57,6 +58,11 @@ export const useProducts = (options: UseProductsOptions = {}) => {
           data = await productApi.getAll(filters);
         }
 
+        // Apply limit if specified
+        if (limit && limit > 0) {
+          data = data.slice(0, limit);
+        }
+
         setProducts(data);
       } catch (err) {
         setError(err instanceof Error ? err : new Error('Failed to fetch products'));
@@ -66,7 +72,7 @@ export const useProducts = (options: UseProductsOptions = {}) => {
     };
 
     fetchProducts();
-  }, [autoFetch, featured, filters.category, filters.minPrice, filters.maxPrice, filters.search]);
+  }, [autoFetch, featured, limit, filters.category, filters.minPrice, filters.maxPrice, filters.search]);
 
   const refetch = async () => {
     try {
