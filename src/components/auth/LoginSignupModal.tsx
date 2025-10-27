@@ -93,16 +93,17 @@ const AuthModal = ({ isOpen, onClose, defaultMode = 'login' }: AuthModalProps) =
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50"
+            className="fixed inset-0 bg-black/75 backdrop-blur-md z-modal-backdrop"
           />
 
           {/* Modal */}
-          <div className="fixed inset-0 flex items-center justify-center z-50 p-4">
+          <div className="fixed inset-0 flex items-center justify-center z-modal p-4">
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="bg-white rounded-3xl shadow-2xl w-full max-w-md overflow-hidden"
+              onClick={(e) => e.stopPropagation()}
+              className="bg-white rounded-3xl shadow-2xl w-full max-w-md overflow-hidden max-h-[90vh] overflow-y-auto"
             >
               {/* Header */}
               <div className="relative bg-gradient-to-br from-primary-600 to-primary-700 text-white p-8 pb-12">

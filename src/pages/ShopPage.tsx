@@ -303,7 +303,7 @@ const ShopPage = () => {
 
       {/* Mobile Filters Modal */}
       {showFilters && (
-        <div className="fixed inset-0 bg-black/50 z-50 lg:hidden">
+        <div className="fixed inset-0 bg-black/50 z-fixed lg:hidden">
           <motion.div
             initial={{ x: '-100%' }}
             animate={{ x: 0 }}
