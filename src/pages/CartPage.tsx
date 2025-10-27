@@ -6,60 +6,12 @@ import Breadcrumbs from '../components/ui/Breadcrumbs';
 import Button from '../components/ui/Button';
 import Input from '../components/ui/Input';
 import Badge from '../components/ui/Badge';
-
-interface CartItem {
-  id: string;
-  productId: string;
-  name: string;
-  image: string;
-  price: number;
-  quantity: number;
-  maxQuantity: number;
-  slug: string;
-}
-
-// Mock cart data
-const MOCK_CART_ITEMS: CartItem[] = [
-  {
-    id: '1',
-    productId: '1',
-    name: 'Classic Gud Bites',
-    image: '/products/classic.jpg',
-    price: 149,
-    quantity: 2,
-    maxQuantity: 10,
-    slug: 'classic-gud-bites',
-  },
-  {
-    id: '2',
-    productId: '2',
-    name: 'Cardamom Gud Bites',
-    image: '/products/cardamom.jpg',
-    price: 169,
-    quantity: 1,
-    maxQuantity: 10,
-    slug: 'cardamom-gud-bites',
-  },
-];
+import { useCart } from '../contexts/CartContext';
 
 const CartPage: React.FC = () => {
-  const [cartItems, setCartItems] = React.useState<CartItem[]>(MOCK_CART_ITEMS);
+  const { items: cartItems, updateQuantity, removeItem, subtotal } = useCart();
   const [couponCode, setCouponCode] = React.useState('');
   const [appliedCoupon, setAppliedCoupon] = React.useState<string | null>(null);
-
-  const updateQuantity = (itemId: string, newQuantity: number) => {
-    setCartItems(items =>
-      items.map(item =>
-        item.id === itemId
-          ? { ...item, quantity: Math.max(1, Math.min(item.maxQuantity, newQuantity)) }
-          : item
-      )
-    );
-  };
-
-  const removeItem = (itemId: string) => {
-    setCartItems(items => items.filter(item => item.id !== itemId));
-  };
 
   const applyCoupon = () => {
     if (couponCode.trim()) {
@@ -69,7 +21,6 @@ const CartPage: React.FC = () => {
     }
   };
 
-  const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const discount = appliedCoupon ? subtotal * 0.1 : 0; // 10% discount
   const shipping = subtotal >= 499 ? 0 : 49;
   const total = subtotal - discount + shipping;
@@ -160,7 +111,7 @@ const CartPage: React.FC = () => {
                   >
                     {/* Product Info */}
                     <div className="md:col-span-5 flex items-center gap-4 mb-4 md:mb-0">
-                      <Link to={`/product/${item.slug}`}>
+                      <Link to={`/product/${item.productId}`}>
                         <img
                           src={item.image}
                           alt={item.name}
@@ -169,7 +120,7 @@ const CartPage: React.FC = () => {
                       </Link>
                       <div>
                         <Link
-                          to={`/product/${item.slug}`}
+                          to={`/product/${item.productId}`}
                           className="font-semibold text-gray-900 hover:text-primary transition-colors line-clamp-2"
                         >
                           {item.name}
@@ -206,8 +157,7 @@ const CartPage: React.FC = () => {
                         </span>
                         <button
                           onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                          disabled={item.quantity >= item.maxQuantity}
-                          className="p-2 hover:bg-gray-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                          className="p-2 hover:bg-gray-100 transition-colors"
                           aria-label="Increase quantity"
                         >
                           <Plus className="w-4 h-4" />
