@@ -15,6 +15,7 @@ import FAQPage from './pages/FAQPage';
 import CheckoutPage from './pages/CheckoutPage';
 import AccountPage from './pages/AccountPage';
 import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 
 function AppContent() {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -50,6 +51,7 @@ function AppContent() {
             } 
           />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/faq" element={<FAQPage />} />
         </Routes>
       </main>
