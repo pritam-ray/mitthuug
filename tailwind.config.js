@@ -81,10 +81,18 @@ export default {
           cream: '#F6EBD5',
           dark: '#2E1C10',
           offwhite: '#F8F5ED',
+          // Aliases for common usage
+          primary: '#de5510',
+          'primary-dark': '#b83f10',
+          secondary: '#446782',
+          'secondary-dark': '#38536a',
         },
         background: {
           light: '#FAFAF9',
           DEFAULT: '#FFFFFF',
+        },
+        border: {
+          DEFAULT: '#E5E7EB',
         },
       },
       fontFamily: {
