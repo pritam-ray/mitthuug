@@ -6,6 +6,7 @@ import Button from '../components/ui/Button';
 import ProductCard from '../components/product/ProductCard';
 import Badge from '../components/ui/Badge';
 import { useProducts } from '../hooks';
+import { useCart } from '../contexts/CartContext';
 
 function HomePage() {
   // All hooks must be called at the top level, before any early returns
@@ -13,6 +14,7 @@ function HomePage() {
   const { products: featuredProducts, loading, error } = useProducts({ 
     featured: true 
   });
+  const { addItem } = useCart();
 
   // Loading state
   if (loading) {
@@ -57,8 +59,20 @@ function HomePage() {
   }));
 
   const handleAddToCart = (productId: string) => {
-    console.log('Add to cart:', productId);
-    // Will integrate with CartContext
+    const product = transformedProducts.find(p => p.id === productId);
+    if (product) {
+      addItem({
+        id: `cart_${productId}_${Date.now()}`,
+        productId: product.id,
+        name: product.name,
+        image: product.image,
+        price: product.price,
+        discount: product.compareAtPrice 
+          ? Math.round(((product.compareAtPrice - product.price) / product.compareAtPrice) * 100)
+          : undefined,
+        quantity: 1,
+      });
+    }
   };
 
   const handleQuickView = (productId: string) => {

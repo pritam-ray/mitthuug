@@ -6,6 +6,7 @@ import Breadcrumbs from '../components/ui/Breadcrumbs';
 import Button from '../components/ui/Button';
 import Badge from '../components/ui/Badge';
 import { useProducts } from '../hooks';
+import { useCart } from '../contexts/CartContext';
 
 const CATEGORIES = [
   'All',
@@ -26,6 +27,7 @@ const ShopPage = () => {
   const [selectedPriceRange, setSelectedPriceRange] = useState('all');
   const [sortBy, setSortBy] = useState('featured');
   const [showFilters, setShowFilters] = useState(false);
+  const { addItem } = useCart();
 
   // Calculate min/max price from selected range
   let minPrice: number | undefined;
@@ -75,7 +77,20 @@ const ShopPage = () => {
   }
 
   const handleAddToCart = (productId: string) => {
-    console.log('Add to cart:', productId);
+    const product = sortedProducts.find(p => p.id === productId);
+    if (product) {
+      addItem({
+        id: `cart_${productId}_${Date.now()}`,
+        productId: product.id,
+        name: product.name,
+        image: product.image,
+        price: product.price,
+        discount: product.compareAtPrice 
+          ? Math.round(((product.compareAtPrice - product.price) / product.compareAtPrice) * 100)
+          : undefined,
+        quantity: 1,
+      });
+    }
   };
 
   const handleQuickView = (productId: string) => {
