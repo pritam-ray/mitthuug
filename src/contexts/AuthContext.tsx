@@ -109,7 +109,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     console.log('SignUp: Auth signup successful, data:', data);
 
     if (data.user) {
-      console.log('SignUp: Inserting user profile into database');
+      // The database trigger should automatically create the user profile
+      // But we'll try to insert it manually as a fallback
+      console.log('SignUp: Attempting to insert user profile (trigger should handle this)');
+      
       const { error: insertError } = await supabase.from('users').insert({
         id: data.user.id,
         name,
@@ -118,8 +121,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       });
 
       if (insertError) {
-        console.error('SignUp: Error inserting user profile:', insertError);
-        // Don't throw here - the auth account was created, just log the error
+        // Check if it's a duplicate key error (trigger already created it)
+        if (insertError.code === '23505' || insertError.message?.includes('duplicate')) {
+          console.log('SignUp: User profile already created by trigger');
+        } else {
+          console.error('SignUp: Error inserting user profile:', insertError);
+          // Don't throw - the auth account was created successfully
+        }
       } else {
         console.log('SignUp: User profile inserted successfully');
       }
