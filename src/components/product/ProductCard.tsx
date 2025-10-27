@@ -32,7 +32,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart, onQuick
   return (
     <motion.div
       whileHover={{ y: -4 }}
-      className="bg-white rounded-lg border border-gray-200 overflow-hidden transition-shadow hover:shadow-lg group"
+      className="bg-white rounded-lg border border-gray-200 overflow-hidden transition-shadow hover:shadow-lg group relative z-0"
     >
       {/* Product Image */}
       <Link to={`/product/${product.slug}`} className="block relative aspect-square overflow-hidden">

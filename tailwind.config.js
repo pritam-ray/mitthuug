@@ -104,8 +104,8 @@ export default {
         '3xl': '2rem',
       },
       zIndex: {
-        'modal-backdrop': '9998',
-        'modal': '9999',
+        'modal-backdrop': '99998',
+        'modal': '99999',
         'dropdown': '1000',
         'sticky': '1020',
         'fixed': '1030',

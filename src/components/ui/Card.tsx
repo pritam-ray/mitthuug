@@ -16,7 +16,7 @@ export const Card: React.FC<CardProps> = ({
   className = '',
   onClick,
 }) => {
-  const baseStyles = 'bg-white rounded-2xl overflow-hidden border border-brand-sand/30 transition-all duration-300';
+  const baseStyles = 'bg-white rounded-2xl overflow-hidden border border-brand-sand/30 transition-all duration-300 relative z-0';
   
   const variantStyles = {
     default: 'p-6',
