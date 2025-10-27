@@ -87,13 +87,14 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, initialMo
 
   return (
     <>
-      <div className="fixed inset-0 bg-black/60 z-50 backdrop-blur-sm" onClick={onClose}></div>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      <div className="fixed inset-0 bg-black/75 z-modal-backdrop backdrop-blur-md" onClick={onClose}></div>
+      <div className="fixed inset-0 z-modal flex items-center justify-center p-4">
         <motion.div
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
           className="bg-white rounded-3xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto"
+          onClick={(e) => e.stopPropagation()}
         >
           <div className="flex items-center justify-between p-6 border-b border-brand-sand">
             <h2 className="text-2xl font-serif font-bold text-brand-jaggery">

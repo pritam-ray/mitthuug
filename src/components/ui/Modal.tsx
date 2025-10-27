@@ -61,7 +61,7 @@ export const Modal: React.FC<ModalProps> = ({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-modal-backdrop"
+            className="fixed inset-0 bg-black/70 backdrop-blur-md z-modal-backdrop"
             onClick={closeOnBackdropClick ? onClose : undefined}
           />
 
@@ -72,7 +72,7 @@ export const Modal: React.FC<ModalProps> = ({
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               transition={{ duration: 0.2 }}
-              className={`bg-white rounded-2xl shadow-2xl w-full ${sizeStyles[size]} relative`}
+              className={`bg-white rounded-2xl shadow-2xl w-full ${sizeStyles[size]} relative max-h-[90vh] overflow-y-auto`}
               onClick={(e) => e.stopPropagation()}
             >
               {/* Header */}
