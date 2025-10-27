@@ -10,17 +10,20 @@ import Reviews from '../components/product/Reviews';
 import ProductCard from '../components/product/ProductCard';
 import { useProduct, useProducts } from '../hooks/useProducts';
 import { useReviews } from '../hooks/useReviews';
+import { useWishlist } from '../hooks/useWishlist';
 import { useAuth } from '../contexts/AuthContext';
 import { useCart } from '../contexts/CartContext';
+import LoginSignupModal from '../components/auth/LoginSignupModal';
 
 const ProductDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const { user } = useAuth();
   const { addItem } = useCart();
+  const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist();
   
   const [quantity, setQuantity] = useState(1);
-  const [isWishlisted, setIsWishlisted] = useState(false);
+  const [showAuthModal, setShowAuthModal] = useState(false);
 
   // Fetch product data
   const { product, loading: productLoading, error: productError } = useProduct(slug || '', 'slug');
@@ -116,14 +119,25 @@ const ProductDetailPage: React.FC = () => {
     navigate('/checkout');
   };
 
-  const handleWishlistToggle = () => {
+  const handleWishlistToggle = async () => {
     if (!user) {
-      // Open auth modal or redirect to login
-      alert('Please login to add items to wishlist');
+      // Show auth modal
+      setShowAuthModal(true);
       return;
     }
-    setIsWishlisted(!isWishlisted);
-    // TODO: Integrate with wishlist API
+
+    if (!product) return;
+
+    try {
+      if (isInWishlist(product.id)) {
+        await removeFromWishlist(product.id);
+      } else {
+        await addToWishlist(product.id);
+      }
+    } catch (error) {
+      console.error('Wishlist error:', error);
+      alert('Failed to update wishlist. Please try again.');
+    }
   };
 
   const handleShare = async () => {
@@ -288,10 +302,10 @@ const ProductDetailPage: React.FC = () => {
                   variant="outline"
                   size="lg"
                   onClick={handleWishlistToggle}
-                  className={isWishlisted ? 'border-primary-600 text-primary-600' : ''}
+                  className={product && isInWishlist(product.id) ? 'border-primary-600 text-primary-600' : ''}
                 >
                   <Heart
-                    className={`w-5 h-5 ${isWishlisted ? 'fill-current' : ''}`}
+                    className={`w-5 h-5 ${product && isInWishlist(product.id) ? 'fill-current' : ''}`}
                   />
                 </Button>
                 <Button
@@ -423,9 +437,15 @@ const ProductDetailPage: React.FC = () => {
                 />
               ))}
             </div>
-          </div>
+          </motion.div>
         )}
       </div>
+
+      {/* Auth Modal */}
+      <LoginSignupModal 
+        isOpen={showAuthModal}
+        onClose={() => setShowAuthModal(false)}
+      />
     </div>
   );
 };

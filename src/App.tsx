@@ -17,6 +17,7 @@ import AccountPage from './pages/AccountPage';
 import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
 import OrderTrackingPage from './pages/OrderTrackingPage';
+import WishlistPage from './pages/WishlistPage';
 
 function AppContent() {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -48,6 +49,14 @@ function AppContent() {
             element={
               <ProtectedRoute>
                 <AccountPage />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
+            path="/wishlist" 
+            element={
+              <ProtectedRoute>
+                <WishlistPage />
               </ProtectedRoute>
             } 
           />
