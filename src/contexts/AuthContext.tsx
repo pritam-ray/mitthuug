@@ -88,6 +88,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const signUp = async (email: string, password: string, name: string) => {
+    console.log('SignUp: Starting signup process for', email);
+    
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
@@ -99,15 +101,28 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       }
     });
 
-    if (error) throw error;
+    if (error) {
+      console.error('SignUp: Supabase auth error:', error);
+      throw error;
+    }
+
+    console.log('SignUp: Auth signup successful, data:', data);
 
     if (data.user) {
-      await supabase.from('users').insert({
+      console.log('SignUp: Inserting user profile into database');
+      const { error: insertError } = await supabase.from('users').insert({
         id: data.user.id,
         name,
         email,
         role: 'user',
       });
+
+      if (insertError) {
+        console.error('SignUp: Error inserting user profile:', insertError);
+        // Don't throw here - the auth account was created, just log the error
+      } else {
+        console.log('SignUp: User profile inserted successfully');
+      }
 
       trackSignup();
 
@@ -120,19 +135,25 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const signIn = async (email: string, password: string) => {
+    console.log('SignIn: Starting login process for', email);
+    
     const { data, error } = await supabase.auth.signInWithPassword({
       email,
       password,
     });
 
     if (error) {
+      console.error('SignIn: Supabase auth error:', error);
       if (error.message.includes('Email not confirmed')) {
         throw new Error('Please verify your email address before signing in. Check your inbox for the verification link.');
       }
       throw error;
     }
 
+    console.log('SignIn: Login successful, data:', data);
+
     if (data.user && !data.user.email_confirmed_at) {
+      console.warn('SignIn: Email not confirmed, signing out');
       await supabase.auth.signOut();
       throw new Error('Please verify your email address before signing in. Check your inbox for the verification link.');
     }

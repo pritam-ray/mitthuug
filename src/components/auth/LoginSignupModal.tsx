@@ -52,19 +52,26 @@ const AuthModal = ({ isOpen, onClose, defaultMode = 'login' }: AuthModalProps) =
           return;
         }
 
+        console.log('Attempting signup with:', formData.email);
         const { needsVerification } = await signUp(formData.email, formData.password, formData.name);
+        console.log('Signup successful, needs verification:', needsVerification);
         
         if (needsVerification) {
-          alert('Please check your email to verify your account');
+          alert('Account created! Please check your email to verify your account before signing in.');
+        } else {
+          alert('Account created successfully! You can now sign in.');
         }
         
         onClose();
       } else {
+        console.log('Attempting login with:', formData.email);
         await signIn(formData.email, formData.password);
+        console.log('Login successful');
         onClose();
       }
     } catch (err: any) {
-      setError(err.message || 'An error occurred');
+      console.error('Authentication error:', err);
+      setError(err.message || 'An error occurred. Please try again.');
     } finally {
       setLoading(false);
     }
