@@ -4,39 +4,37 @@
 -- Clear existing products (optional - uncomment if you want to start fresh)
 -- DELETE FROM products;
 
--- Insert featured jaggery products
-INSERT INTO products (name, slug, description, price, compare_at_price, category, image_url, stock, is_featured, is_active, is_new, is_bestseller, ingredients)
+-- Insert featured jaggery products (WITHOUT ingredients column - will be added separately if needed)
+INSERT INTO products (name, slug, description, price, compare_at_price, category, image_url, stock, is_featured, is_active, is_new, is_bestseller)
 VALUES
 -- Featured Products
-('Organic Jaggery Powder (500g)', 'organic-jaggery-powder', 'Premium quality organic jaggery powder made from pure sugarcane juice. Rich in minerals and perfect for daily use in tea, coffee, and cooking.', 250, 299, 'Powder', 'https://images.unsplash.com/photo-1599909533313-d6ce0fc82e1f?w=800', 100, true, true, false, true, 'Pure Organic Sugarcane Juice'),
+('Organic Jaggery Powder (500g)', 'organic-jaggery-powder', 'Premium quality organic jaggery powder made from pure sugarcane juice. Rich in minerals and perfect for daily use in tea, coffee, and cooking.', 250, 299, 'Powder', 'https://images.unsplash.com/photo-1599909533313-d6ce0fc82e1f?w=800', 100, true, true, false, true),
 
-('Organic Jaggery Powder (500g)', 'organic-jaggery-powder', 'Premium quality organic jaggery powder made from pure sugarcane juice. Rich in minerals and perfect for daily use in tea, coffee, and cooking.', 250, 299, 'Powder', 'https://images.unsplash.com/photo-1599909533313-d6ce0fc82e1f?w=800', 100, true, true, false, true, 'Pure Organic Sugarcane Juice'),
+('Gud Ladoo Premium Box (250g)', 'gud-ladoo-premium-box', 'Handcrafted traditional gud ladoos made with pure jaggery, roasted peanuts, and sesame seeds. A perfect blend of taste and nutrition.', 350, 400, 'Ladoo', 'https://images.unsplash.com/photo-1606312645999-8ede8f82a57d?w=800', 75, true, true, true, true),
 
-('Gud Ladoo Premium Box (250g)', 'gud-ladoo-premium-box', 'Handcrafted traditional gud ladoos made with pure jaggery, roasted peanuts, and sesame seeds. A perfect blend of taste and nutrition.', 350, 400, 'Ladoo', 'https://images.unsplash.com/photo-1606312645999-8ede8f82a57d?w=800', 75, true, true, true, true, 'Jaggery, Peanuts, Sesame Seeds, Ghee'),
+('Palm Jaggery Cubes (400g)', 'palm-jaggery-cubes', 'Naturally processed palm jaggery cubes from Kerala. Perfect for making traditional sweets and adding to beverages.', 320, 380, 'Blocks', 'https://images.unsplash.com/photo-1587049352846-4a222e784169?w=800', 60, true, true, false, false),
 
-('Palm Jaggery Cubes (400g)', 'palm-jaggery-cubes', 'Naturally processed palm jaggery cubes from Kerala. Perfect for making traditional sweets and adding to beverages.', 320, 380, 'Blocks', 'https://images.unsplash.com/photo-1587049352846-4a222e784169?w=800', 60, true, true, false, false, '100% Pure Palm Jaggery'),
-
-('Jaggery Balls Gift Pack (300g)', 'jaggery-balls-gift-pack', 'Premium jaggery balls infused with cardamom and dry fruits. Perfect for gifting during festivals and special occasions.', 450, 550, 'Balls', 'https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?w=800', 50, true, true, true, false, 'Jaggery, Cardamom, Almonds, Cashews'),
+('Jaggery Balls Gift Pack (300g)', 'jaggery-balls-gift-pack', 'Premium jaggery balls infused with cardamom and dry fruits. Perfect for gifting during festivals and special occasions.', 450, 550, 'Balls', 'https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?w=800', 50, true, true, true, false),
 
 -- Powder Category
-('Jaggery Powder with Turmeric (500g)', 'jaggery-powder-turmeric', 'Health-boosting combination of organic jaggery powder and turmeric. Great for immunity and daily wellness.', 280, 320, 'Powder', 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=800', 80, false, true, true, false, 'Jaggery Powder, Turmeric Powder'),
+('Jaggery Powder with Turmeric (500g)', 'jaggery-powder-turmeric', 'Health-boosting combination of organic jaggery powder and turmeric. Great for immunity and daily wellness.', 280, 320, 'Powder', 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=800', 80, false, true, true, false),
 
-('Date Palm Jaggery Powder (500g)', 'date-palm-jaggery-powder', 'Rare date palm jaggery powder with natural sweetness and rich iron content. Perfect for pregnant women and children.', 400, 450, 'Powder', 'https://images.unsplash.com/photo-1590004953392-5aba2e72269a?w=800', 40, false, true, false, false, '100% Date Palm Extract'),
+('Date Palm Jaggery Powder (500g)', 'date-palm-jaggery-powder', 'Rare date palm jaggery powder with natural sweetness and rich iron content. Perfect for pregnant women and children.', 400, 450, 'Powder', 'https://images.unsplash.com/photo-1590004953392-5aba2e72269a?w=800', 40, false, true, false, false),
 
 -- Ladoo Category
-('Til Gud Ladoo (200g)', 'til-gud-ladoo', 'Traditional sesame jaggery ladoos made during Makar Sankranti. Packed with energy and nutrition.', 300, 350, 'Ladoo', 'https://images.unsplash.com/photo-1599909533313-d6ce0fc82e1f?w=800', 90, false, true, false, true, 'Sesame Seeds, Jaggery, Ghee'),
+('Til Gud Ladoo (200g)', 'til-gud-ladoo', 'Traditional sesame jaggery ladoos made during Makar Sankranti. Packed with energy and nutrition.', 300, 350, 'Ladoo', 'https://images.unsplash.com/photo-1599909533313-d6ce0fc82e1f?w=800', 90, false, true, false, true),
 
-('Dry Fruit Gud Ladoo (250g)', 'dry-fruit-gud-ladoo', 'Premium ladoos enriched with cashews, almonds, pistachios, and pure jaggery. A royal treat for your taste buds.', 500, 600, 'Ladoo', 'https://images.unsplash.com/photo-1581798459219-c944e0892630?w=800', 35, false, true, true, false, 'Jaggery, Cashews, Almonds, Pistachios, Ghee'),
+('Dry Fruit Gud Ladoo (250g)', 'dry-fruit-gud-ladoo', 'Premium ladoos enriched with cashews, almonds, pistachios, and pure jaggery. A royal treat for your taste buds.', 500, 600, 'Ladoo', 'https://images.unsplash.com/photo-1581798459219-c944e0892630?w=800', 35, false, true, true, false),
 
 -- Blocks Category
-('Sugarcane Jaggery Blocks (1kg)', 'sugarcane-jaggery-blocks', 'Traditional solid jaggery blocks made from fresh sugarcane juice. Long shelf life and authentic taste.', 200, 250, 'Blocks', 'https://images.unsplash.com/photo-1584990347449-39b0127e8fd9?w=800', 120, false, true, false, true, 'Pure Sugarcane Juice'),
+('Sugarcane Jaggery Blocks (1kg)', 'sugarcane-jaggery-blocks', 'Traditional solid jaggery blocks made from fresh sugarcane juice. Long shelf life and authentic taste.', 200, 250, 'Blocks', 'https://images.unsplash.com/photo-1584990347449-39b0127e8fd9?w=800', 120, false, true, false, true),
 
-('Mini Jaggery Cubes (250g)', 'mini-jaggery-cubes', 'Convenient mini cubes perfect for individual servings in tea and coffee. Hygienically packed.', 150, 180, 'Blocks', 'https://images.unsplash.com/photo-1587049352846-4a222e784169?w=800', 100, false, true, false, false, 'Sugarcane Jaggery'),
+('Mini Jaggery Cubes (250g)', 'mini-jaggery-cubes', 'Convenient mini cubes perfect for individual servings in tea and coffee. Hygienically packed.', 150, 180, 'Blocks', 'https://images.unsplash.com/photo-1587049352846-4a222e784169?w=800', 100, false, true, false, false),
 
 -- Balls Category
-('Cardamom Jaggery Balls (200g)', 'cardamom-jaggery-balls', 'Bite-sized jaggery balls flavored with premium green cardamom. Perfect post-meal digestive.', 280, 320, 'Balls', 'https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?w=800', 70, false, true, false, false, 'Jaggery, Cardamom'),
+('Cardamom Jaggery Balls (200g)', 'cardamom-jaggery-balls', 'Bite-sized jaggery balls flavored with premium green cardamom. Perfect post-meal digestive.', 280, 320, 'Balls', 'https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?w=800', 70, false, true, false, false),
 
-('Ginger Jaggery Energy Balls (250g)', 'ginger-jaggery-energy-balls', 'Energizing combination of dried ginger and jaggery. Great for winters and boosting immunity.', 320, 370, 'Balls', 'https://images.unsplash.com/photo-1599909533313-d6ce0fc82e1f?w=800', 55, false, true, true, false, 'Jaggery, Dry Ginger, Black Pepper');
+('Ginger Jaggery Energy Balls (250g)', 'ginger-jaggery-energy-balls', 'Energizing combination of dried ginger and jaggery. Great for winters and boosting immunity.', 320, 370, 'Balls', 'https://images.unsplash.com/photo-1599909533313-d6ce0fc82e1f?w=800', 55, false, true, true, false);
 
 -- Update sold_count, rating, and review_count for featured products
 UPDATE products 
