@@ -134,7 +134,7 @@ CREATE TABLE IF NOT EXISTS public.newsletter_subscribers (
 
 -- Create indexes
 CREATE INDEX IF NOT EXISTS idx_newsletter_email ON public.newsletter_subscribers(email);
-CREATE INDEX IF NOT EXISTS idx_newsletter_is_active ON public.newsletter_subscribers(is_active) WHERE is_active = TRUE;
+CREATE INDEX IF NOT EXISTS idx_newsletter_is_active ON public.newsletter_subscribers(is_active);
 CREATE INDEX IF NOT EXISTS idx_newsletter_subscribed_at ON public.newsletter_subscribers(subscribed_at DESC);
 
 -- Enable Row Level Security
