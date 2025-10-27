@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ShoppingBag, Plus, Minus, Trash2 } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Button from '../ui/Button';
 import Badge from '../ui/Badge';
+import { useAuth } from '../../contexts/AuthContext';
+import LoginSignupModal from '../auth/LoginSignupModal';
 
 interface CartItem {
   id: string;
@@ -30,9 +32,22 @@ const CartDrawer: React.FC<CartDrawerProps> = ({
   onUpdateQuantity,
   onRemoveItem,
 }) => {
+  const { user } = useAuth();
+  const navigate = useNavigate();
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  
   const subtotal = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const shipping = subtotal >= 499 ? 0 : 49;
   const total = subtotal + shipping;
+
+  const handleCheckout = () => {
+    if (!user) {
+      setShowAuthModal(true);
+    } else {
+      onClose();
+      navigate('/checkout');
+    }
+  };
 
   return (
     <AnimatePresence>
@@ -198,16 +213,14 @@ const CartDrawer: React.FC<CartDrawerProps> = ({
                 </div>
 
                 {/* Checkout Button */}
-                <Link to="/checkout" className="block">
-                  <Button
-                    variant="primary"
-                    size="lg"
-                    className="w-full"
-                    onClick={onClose}
-                  >
-                    Proceed to Checkout
-                  </Button>
-                </Link>
+                <Button
+                  variant="primary"
+                  size="lg"
+                  className="w-full"
+                  onClick={handleCheckout}
+                >
+                  Proceed to Checkout
+                </Button>
 
                 <Link to="/cart" className="block">
                   <Button
@@ -224,6 +237,12 @@ const CartDrawer: React.FC<CartDrawerProps> = ({
           </motion.div>
         </>
       )}
+      
+      {/* Login Modal */}
+      <LoginSignupModal 
+        isOpen={showAuthModal} 
+        onClose={() => setShowAuthModal(false)} 
+      />
     </AnimatePresence>
   );
 };
