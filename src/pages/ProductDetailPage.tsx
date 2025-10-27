@@ -411,7 +411,11 @@ const ProductDetailPage: React.FC = () => {
 
         {/* Related Products */}
         {filteredRelatedProducts.length > 0 && (
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+          >
             <h2 className="font-display text-2xl lg:text-3xl font-bold text-gray-900 mb-8">
               You May Also Like
             </h2>

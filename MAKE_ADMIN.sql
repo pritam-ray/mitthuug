@@ -3,7 +3,7 @@
 
 UPDATE public.users
 SET role = 'admin'
-WHERE email = 'your-email@example.com';
+WHERE email = 'impritamray@gmail.com';
 
 -- Verify the update
 SELECT id, name, email, role
