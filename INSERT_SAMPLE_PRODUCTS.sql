@@ -1,8 +1,8 @@
 -- Insert sample products for MitthuuG
 -- Run this in Supabase SQL Editor after running the e-commerce schema migration
 
--- Clear existing products (optional - uncomment if you want to start fresh)
--- DELETE FROM products;
+-- Clear existing products (ENABLED - will start fresh)
+DELETE FROM products;
 
 -- Insert featured jaggery products (WITHOUT ingredients column - will be added separately if needed)
 INSERT INTO products (name, slug, description, price, compare_at_price, category, image_url, stock, is_featured, is_active, is_new, is_bestseller)

@@ -66,6 +66,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const fetchUserProfile = async (userId: string) => {
     try {
+      // TEMPORARY FIX: Skip user profile fetch to avoid infinite recursion
+      // TODO: Fix RLS policies and re-enable this
+      console.log('Skipping user profile fetch temporarily');
+      setLoading(false);
+      return;
+      
+      /* DISABLED TEMPORARILY
       const { data, error } = await supabase
         .from('users')
         .select('*')
@@ -79,12 +86,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       } else {
         setUserProfile(null);
       }
+      */
     } catch (error) {
       console.error('Error fetching user profile:', error);
       setUserProfile(null);
-    } finally {
       setLoading(false);
     }
+  };
   };
 
   const signUp = async (email: string, password: string, name: string) => {
